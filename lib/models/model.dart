@@ -1,0 +1,10 @@
+import 'package:flutter/material.dart';
+
+class Model {
+  var userNameController = TextEditingController();
+  var passwordController = TextEditingController();
+  bool passwordVisibility = false;
+  Model();
+  // ignore: non_constant_identifier_names
+  static int StudentId = 0;
+}
