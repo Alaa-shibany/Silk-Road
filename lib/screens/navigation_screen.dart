@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:silk_road/models/constants.dart';
 import 'package:silk_road/translations/locale_keys.g.dart';
 
@@ -38,15 +39,15 @@ class _NavigationScreenState extends State<NavigationScreen> {
             },
             tabs: [
               const GButton(
-                icon: Icons.home_rounded,
+                icon: Icons.home,
                 text: 'Home',
               ),
               const GButton(
-                icon: Icons.location_pin,
+                icon: Iconsax.map4,
                 text: 'Map',
               ),
               GButton(
-                icon: Icons.category_rounded,
+                icon: Iconsax.category_25,
                 text: LocaleKeys.sectors.tr(),
               ),
               const GButton(

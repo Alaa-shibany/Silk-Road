@@ -9,12 +9,14 @@ class ShopWidget extends StatelessWidget {
     required this.mediaQuery,
     required this.subtitle,
     required this.status,
+    required this.shopId,
   });
   final String imageUrl;
   final String title;
   final Size mediaQuery;
   final String subtitle;
   final String status;
+  final String shopId;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -28,12 +30,15 @@ class ShopWidget extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              FadeInImage(
-                placeholder: MemoryImage(kTransparentImage),
-                image: AssetImage(imageUrl),
-                fit: BoxFit.cover,
-                height: mediaQuery.height / 5.5,
-                width: double.infinity,
+              Hero(
+                tag: shopId,
+                child: FadeInImage(
+                  placeholder: MemoryImage(kTransparentImage),
+                  image: AssetImage(imageUrl),
+                  fit: BoxFit.cover,
+                  height: mediaQuery.height / 5.5,
+                  width: double.infinity,
+                ),
               ),
               Positioned(
                 bottom: 0,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:silk_road/data/dummy_data.dart';
+import 'package:silk_road/screens/shop_details_screen.dart';
 import 'package:silk_road/widgets/shops_screen/shop_widget.dart';
 
 import '../common/BackgroundPaint.dart';
@@ -108,12 +109,24 @@ class _ShopsScreenState extends State<ShopsScreen> {
                   child: ListView.builder(
                     padding: EdgeInsets.zero,
                     itemCount: filteredDataList.length,
-                    itemBuilder: (context, index) => ShopWidget(
-                        status: filteredDataList[index]['status'],
-                        subtitle: filteredDataList[index]['subtitle'],
-                        mediaQuery: mediaQuery,
-                        imageUrl: filteredDataList[index]['image'],
-                        title: filteredDataList[index]['name']),
+                    itemBuilder: (context, index) => GestureDetector(
+                      onTap: filteredDataList[index]['status'] == 'closed'
+                          ? null
+                          : () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => ShopDetailsScreen(
+                                    shopDetails: filteredDataList[index],
+                                  ),
+                                ),
+                              ),
+                      child: ShopWidget(
+                          shopId: filteredDataList[index]['id'].toString(),
+                          status: filteredDataList[index]['status'],
+                          subtitle: filteredDataList[index]['subtitle'],
+                          mediaQuery: mediaQuery,
+                          imageUrl: filteredDataList[index]['image'],
+                          title: filteredDataList[index]['name']),
+                    ),
                   ),
                 ),
               ],
