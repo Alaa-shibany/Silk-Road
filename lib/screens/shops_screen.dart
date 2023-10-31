@@ -14,13 +14,38 @@ class ShopsScreen extends StatefulWidget {
 }
 
 class _ShopsScreenState extends State<ShopsScreen> {
-  List dataList = [];
+  final TextEditingController _searchController = TextEditingController();
+  Map dataList = {};
+  List<Map<String, dynamic>> filteredDataList = [];
+
   @override
   void initState() {
     super.initState();
     dataList = data.sectorsList
         .where((element) => element['id'] == widget.shopsId)
-        .toList();
+        .toList()
+        .first;
+    filteredDataList = [...dataList['shops']];
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  void search() {
+    String searchQuery = _searchController.text.toLowerCase();
+    List<Map<String, dynamic>> finalData = [];
+    print(dataList);
+    setState(() {
+      for (int i = 0; i < dataList['shops'].length; i++) {
+        if (dataList['shops'][i]['name'].toLowerCase().contains(searchQuery)) {
+          finalData.add(dataList['shops'][i]);
+        }
+      }
+      filteredDataList = finalData;
+    });
   }
 
   @override
@@ -35,11 +60,11 @@ class _ShopsScreenState extends State<ShopsScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              dataList.first['image'],
-              scale: mediaQuery.height / 90,
+              dataList['image'],
+              scale: mediaQuery.height / 50,
             ),
             Text(
-              dataList.first['name'],
+              dataList['name'],
               style: const TextStyle(fontWeight: FontWeight.bold),
             )
           ],
@@ -54,16 +79,44 @@ class _ShopsScreenState extends State<ShopsScreen> {
                       .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automaticallypainter: AppBarCustom(),
               painter: AppBarCustom()),
           Container(
-            margin: EdgeInsets.only(top: mediaQuery.height / 6),
-            child: ListView.builder(
-              padding: EdgeInsets.zero,
-              itemCount: dataList.first['shops'].length,
-              itemBuilder: (context, index) => ShopWidget(
-                  status: dataList.first['shops'][index]['status'],
-                  subtitle: dataList.first['shops'][index]['subtitle'],
-                  mediaQuery: mediaQuery,
-                  imageUrl: dataList.first['shops'][index]['image'],
-                  title: dataList.first['shops'][index]['name']),
+            margin: EdgeInsets.only(top: mediaQuery.height / 7),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: SizedBox(
+                    height: 50,
+                    child: TextField(
+                      controller: _searchController,
+                      onChanged: (value) {
+                        search();
+                      },
+                      decoration: InputDecoration(
+                        labelText: 'Search',
+                        fillColor: Colors.white.withOpacity(0.5),
+                        filled: true,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(
+                              30.0), // Change this to your desired radius
+                        ),
+                        prefixIcon: const Icon(Icons.search),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    padding: EdgeInsets.zero,
+                    itemCount: filteredDataList.length,
+                    itemBuilder: (context, index) => ShopWidget(
+                        status: filteredDataList[index]['status'],
+                        subtitle: filteredDataList[index]['subtitle'],
+                        mediaQuery: mediaQuery,
+                        imageUrl: filteredDataList[index]['image'],
+                        title: filteredDataList[index]['name']),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
