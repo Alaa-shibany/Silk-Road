@@ -43,5 +43,14 @@
     "welcom":"Welcome to your app",
     "sorry":"Sorry",
     "passoremail":"Password or email is wrong",
-    "emailinuse":"This email is already used"
+    "emailinuse":"This email is already used",
+    "search":"Search",
+    "open":"Open",
+    "closed":"Closed",
+    "details":"Details",
+    "ratenow":"rate now",
+    "location":"Location",
+    "am":"AM",
+    "bm":"PM",
+    "workingtime" :"Working time"
 }

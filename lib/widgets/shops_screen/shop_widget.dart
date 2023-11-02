@@ -1,4 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:silk_road/translations/locale_keys.g.dart';
 import 'package:silk_road/widgets/shops_screen/transperant.dart';
 
 class ShopWidget extends StatelessWidget {
@@ -86,7 +88,7 @@ class ShopWidget extends StatelessWidget {
             ],
           ),
         ),
-        status == 'closed'
+        status == LocaleKeys.closed.tr()
             ? Container(
                 margin: const EdgeInsets.all(8),
                 height: mediaQuery.height / 5.5,

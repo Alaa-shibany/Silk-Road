@@ -43,6 +43,15 @@
     "welcom":"Bienvenue sur votre application",
     "sorry":"Désolée",
     "passoremail":"Le mot de passe ou l'e-mail est erroné",
-    "emailinuse":"Cet e-mail est déjà pris"
+    "emailinuse":"Cet e-mail est déjà pris",
+    "search":"Recherche",
+    "open":"Ouvrir",
+    "closed":"Fermé",
+    "details":"Détails",
+    "ratenow":"évaluez maintenant",
+    "location":"Emplacement",
+    "am":"AM",
+    "bm":"PM",
+    "workingtime" :"Temps de travail"
 
 }

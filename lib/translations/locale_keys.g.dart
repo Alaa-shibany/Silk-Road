@@ -47,4 +47,13 @@ abstract class LocaleKeys {
   static const sorry = 'sorry';
   static const passoremail = 'passoremail';
   static const emailinuse = 'emailinuse';
+  static const search = 'search';
+  static const open = 'open';
+  static const closed = 'closed';
+  static const details = 'details';
+  static const ratenow = 'ratenow';
+  static const location = 'location';
+  static const am = 'am';
+  static const bm = 'bm';
+  static const workingtime = 'workingtime';
 }

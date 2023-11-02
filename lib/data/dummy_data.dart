@@ -24,36 +24,39 @@ class data {
           "id": 0,
           "rate": 5.0,
           "name": "Restaurant A",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "image": 'assets/images/resturants/resturant1.png',
           "location": "123 Main St, Cityville",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Make tako and showerma",
-          "status": "closed",
+          "status": LocaleKeys.closed.tr(),
           "offers": ["Free Dessert with Every Meal", "Happy Hour: 5 PM - 7 PM"]
         },
         {
           "id": 1,
           "rate": 3.0,
           "name": "Restaurant B",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "image": 'assets/images/resturants/resturant2.png',
           "location": "456 Elm St, Townsville",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Fast food and vegetarian  ",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": ["10% off for Students", "Live Music on Fridays"]
         },
         {
           "id": 2,
           "rate": 2.0,
           "name": "Restaurant C",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "image": 'assets/images/resturants/resturant3.png',
           "location": "789 Oak St, Villageland",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Fast food with delivery",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "Lunch Buffet: 12 PM - 2 PM",
             "Buy One Get One Free: Pasta Dishes"
@@ -63,12 +66,13 @@ class data {
           "id": 3,
           "rate": 4.5,
           "name": "Restaurant D",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "image": 'assets/images/offer3.png',
           "location": "789 Oak St, Villageland",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Fast food with delivery",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "Lunch Buffet: 12 PM - 2 PM",
             "Buy One Get One Free: Pasta Dishes"
@@ -78,12 +82,13 @@ class data {
           "id": 4,
           "rate": 5.0,
           "name": "Restaurant E",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "image": 'assets/images/offer2.png',
           "location": "789 Oak St, Villageland",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Fast food with delivery",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "Lunch Buffet: 12 PM - 2 PM",
             "Buy One Get One Free: Pasta Dishes"
@@ -94,11 +99,12 @@ class data {
           "name": "Restaurant F",
           "rate": 1.0,
           "image": 'assets/images/offer1.png',
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "789 Oak St, Villageland",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Fast food with delivery",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "Lunch Buffet: 12 PM - 2 PM",
             "Buy One Get One Free: Pasta Dishes"
@@ -116,11 +122,12 @@ class data {
           "name": "Bank A",
           "rate": 5.0,
           "image": 'assets/images/bank/bank1.png',
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "321 Bank St, Moneyville",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Personal and business banking services",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": ["Free Checking Account", "Business Loans Available"]
         },
         {
@@ -128,11 +135,12 @@ class data {
           "name": "Bank B",
           "rate": 5.0,
           "image": 'assets/images/bank/bank1.png',
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "555 Finance Ave, Wealthburg",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Savings and investment solutions",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "High-Interest Savings Account",
             "Financial Planning Services"
@@ -150,11 +158,12 @@ class data {
           "name": "Car Rental A",
           "rate": 5.0,
           "image": "assets/images/cars/car1.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "123 Rental Ave, Cityville",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Economy, Sedan, and SUV Rentals",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": ["Weekend Special: 20% off", "Free GPS with Every Rental"]
         },
         {
@@ -162,11 +171,12 @@ class data {
           "name": "Car Rental B",
           "rate": 5.0,
           "image": "assets/images/cars/car2.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "456 Drive St, Townsville",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Luxury and Sports Car Rentals",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "10% off for Repeat Customers",
             "Free Car Wash with Return"
@@ -177,11 +187,12 @@ class data {
           "name": "Car Rental C",
           "rate": 5.0,
           "image": "assets/images/cars/car3.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "789 Highway Rd, Villageland",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Family-friendly Minivans and SUVs",
-          "status": "Closed",
+          "status": LocaleKeys.closed.tr(),
           "offers": [
             "Monthly Rental: 15% Discount",
             "Child Car Seats Available"
@@ -192,11 +203,12 @@ class data {
           "name": "Car Rental D",
           "rate": 5.0,
           "image": "assets/images/cars/car4.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "101 Renting Blvd, Countryside",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Electric and Hybrid Car Rentals",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "Green Fleet: Eco-friendly Options",
             "Free Charging Stations"
@@ -207,11 +219,12 @@ class data {
           "name": "Car Rental E",
           "rate": 5.0,
           "image": "assets/images/cars/car5.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "202 Rent Lane, Mountainview",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Budget-Friendly Compact Cars",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": ["Unlimited Mileage Packages", "Senior Citizen Discounts"]
         },
         {
@@ -219,11 +232,12 @@ class data {
           "name": "Car Rental F",
           "rate": 5.0,
           "image": "assets/images/cars/car6.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "location": "303 Drive Way, Lakeside",
           "subtitle": "Off-Road and Adventure Vehicles",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "4x4 Rentals for Outdoor Enthusiasts",
             "Roadside Assistance Included"
@@ -241,11 +255,12 @@ class data {
           "name": "Glow Beauty Clinic",
           "rate": 5.0,
           "image": "assets/images/beauty/beauty1.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "123 Beauty Street, Cityville",
           "subtitle": "Specializing in Skincare and Facial Treatments",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "Complimentary Skin Consultation",
             "10% Off First Treatment"
@@ -256,11 +271,12 @@ class data {
           "name": "Radiant Skin Clinic",
           "rate": 5.0,
           "image": "assets/images/beauty/beauty1.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "456 Complexion Avenue, Townsville",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Experts in Dermatology and Anti-Aging",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": ["Botox and Dermal Filler Packages", "Customized Facials"]
         },
         {
@@ -268,11 +284,12 @@ class data {
           "name": "Elegance Wellness Center",
           "rate": 5.0,
           "image": "assets/images/beauty/beauty1.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "789 Beauty Boulevard, Villageland",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Holistic Health and Beauty Solutions",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": [
             "Massage Therapy: Relaxation and Deep Tissue",
             "Weight Loss Programs"
@@ -284,10 +301,11 @@ class data {
           "rate": 5.0,
           "image": "assets/images/beauty/beauty1.png",
           "location": "101 Ageless Lane, Countryside",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Specialists in Non-Surgical Facelifts",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": ["PDO Thread Lifts", "Microdermabrasion Treatments"]
         },
         {
@@ -295,11 +313,12 @@ class data {
           "name": "Harmony Beauty Studio",
           "rate": 5.0,
           "image": "assets/images/beauty/beauty1.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "202 Serenity Street, Mountainview",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Hair, Nail, and Makeup Services",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": ["Hair Coloring and Styling", "Manicures and Pedicures"]
         },
         {
@@ -307,11 +326,12 @@ class data {
           "name": "Pure Radiance Aesthetics",
           "rate": 5.0,
           "image": "assets/images/beauty/beauty1.png",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
           "location": "303 Glow Avenue, Lakeside",
           "description":
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Cosmetic Procedures and Skin Rejuvenation",
-          "status": "Open",
+          "status": LocaleKeys.open.tr(),
           "offers": ["Laser Hair Removal Packages", "PRP Therapy for Hair Loss"]
         }
       ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:silk_road/data/dummy_data.dart';
-import 'package:silk_road/screens/shop_details_screen.dart';
-import 'package:silk_road/widgets/shops_screen/shop_widget.dart';
+import 'package:silk_road/widgets/shops_screen/list_shops_widget.dart';
+import 'package:silk_road/widgets/shops_screen/search_bar_widget.dart';
 
 import '../common/BackgroundPaint.dart';
 
@@ -38,7 +38,6 @@ class _ShopsScreenState extends State<ShopsScreen> {
   void search() {
     String searchQuery = _searchController.text.toLowerCase();
     List<Map<String, dynamic>> finalData = [];
-    print(dataList);
     setState(() {
       for (int i = 0; i < dataList['shops'].length; i++) {
         if (dataList['shops'][i]['name'].toLowerCase().contains(searchQuery)) {
@@ -83,52 +82,14 @@ class _ShopsScreenState extends State<ShopsScreen> {
             margin: EdgeInsets.only(top: mediaQuery.height / 7),
             child: Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: SizedBox(
-                    height: 50,
-                    child: TextField(
-                      controller: _searchController,
-                      onChanged: (value) {
-                        search();
-                      },
-                      decoration: InputDecoration(
-                        labelText: 'Search',
-                        fillColor: Colors.white.withOpacity(0.5),
-                        filled: true,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(
-                              30.0), // Change this to your desired radius
-                        ),
-                        prefixIcon: const Icon(Icons.search),
-                      ),
-                    ),
-                  ),
+                SearchBarWidget(
+                  searchController: _searchController,
+                  onChanged: (value) {
+                    search();
+                  },
                 ),
-                Expanded(
-                  child: ListView.builder(
-                    padding: EdgeInsets.zero,
-                    itemCount: filteredDataList.length,
-                    itemBuilder: (context, index) => GestureDetector(
-                      onTap: filteredDataList[index]['status'] == 'closed'
-                          ? null
-                          : () => Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => ShopDetailsScreen(
-                                    shopDetails: filteredDataList[index],
-                                  ),
-                                ),
-                              ),
-                      child: ShopWidget(
-                          shopId: filteredDataList[index]['id'].toString(),
-                          status: filteredDataList[index]['status'],
-                          subtitle: filteredDataList[index]['subtitle'],
-                          mediaQuery: mediaQuery,
-                          imageUrl: filteredDataList[index]['image'],
-                          title: filteredDataList[index]['name']),
-                    ),
-                  ),
-                ),
+                ShopListWidget(
+                    filteredDataList: filteredDataList, mediaQuery: mediaQuery),
               ],
             ),
           ),

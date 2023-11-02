@@ -59,7 +59,16 @@ class CodegenLoader extends AssetLoader {
     "welcom": "مرحباً بك في تطبيقك",
     "sorry": "آسف!",
     "passoremail": "كلمة المرور أو الحساب غير صحيح",
-    "emailinuse": "هذا الحساب مستخدم بالفعل"
+    "emailinuse": "هذا الحساب مستخدم بالفعل",
+    "search": "بحث",
+    "open": "مفتوح",
+    "closed": "مغلق",
+    "details": "التفاصيل",
+    "ratenow": "قيم الآن",
+    "location": "الموقع",
+    "am": "ص",
+    "bm": "م",
+    "workingtime": "وقت العمل"
   };
   static const Map<String, dynamic> fa = {
     "languagesellect": "زبان مورد نظر خود را انتخاب کنید",
@@ -106,7 +115,16 @@ class CodegenLoader extends AssetLoader {
     "welcom": "به برنامه خود خوش آمدید",
     "sorry": "متاسف",
     "passoremail": "رمز عبور یا ایمیل اشتباه است",
-    "emailinuse": "این ایمیل قبلا استفاده شده است"
+    "emailinuse": "این ایمیل قبلا استفاده شده است",
+    "search": "جستجو کردن",
+    "open": "باز کن",
+    "closed": "بسته شد",
+    "details": "جزئیات",
+    "ratenow": "اکنون بسنج",
+    "location": "محل",
+    "am": "صبح",
+    "bm": "بعد از ظهر",
+    "workingtime": "زمان کار"
   };
   static const Map<String, dynamic> ru = {
     "languagesellect": "Выберите язык, который вы хотите",
@@ -152,7 +170,16 @@ class CodegenLoader extends AssetLoader {
     "welcom": "Добро пожаловать в ваше приложение",
     "sorry": "Извини",
     "passoremail": "Пароль или адрес электронной почты неверен",
-    "emailinuse": "Этот электронный адрес уже используется"
+    "emailinuse": "Этот электронный адрес уже используется",
+    "search": "Поиск",
+    "open": "Открыть",
+    "closed": "Закрыто",
+    "details": "Подробности",
+    "ratenow": "Оценить сейчас",
+    "location": "Расположение",
+    "am": "AM",
+    "bm": "PM",
+    "workingtime": "Рабочее время"
   };
   static const Map<String, dynamic> fr = {
     "languagesellect": "Choisissez la langue que vous voulez",
@@ -199,7 +226,16 @@ class CodegenLoader extends AssetLoader {
     "welcom": "Bienvenue sur votre application",
     "sorry": "Désolée",
     "passoremail": "Le mot de passe ou l'e-mail est erroné",
-    "emailinuse": "Cet e-mail est déjà pris"
+    "emailinuse": "Cet e-mail est déjà pris",
+    "search": "Recherche",
+    "open": "Ouvrir",
+    "closed": "Fermé",
+    "details": "Détails",
+    "ratenow": "évaluez maintenant",
+    "location": "Emplacement",
+    "am": "AM",
+    "bm": "PM",
+    "workingtime": "Temps de travail"
   };
   static const Map<String, dynamic> en = {
     "languagesellect": "Sellect your language",
@@ -246,7 +282,16 @@ class CodegenLoader extends AssetLoader {
     "welcom": "Welcome to your app",
     "sorry": "Sorry",
     "passoremail": "Password or email is wrong",
-    "emailinuse": "This email is already used"
+    "emailinuse": "This email is already used",
+    "search": "Search",
+    "open": "Open",
+    "closed": "Closed",
+    "details": "Details",
+    "ratenow": "rate now",
+    "location": "Location",
+    "am": "AM",
+    "bm": "PM",
+    "workingtime": "Working time"
   };
 
   static const Map<String, Map<String, dynamic>> mapLocales = {
