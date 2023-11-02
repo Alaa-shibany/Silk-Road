@@ -9,7 +9,7 @@ class HeroImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Hero(
-      tag: shopDetails['id'],
+      tag: '${shopDetails['id']}-${shopDetails['name']}',
       child: Container(
         // margin: EdgeInsets.symmetric(
         //     horizontal: mediaQuery.width / 30),

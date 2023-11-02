@@ -68,7 +68,8 @@ class CodegenLoader extends AssetLoader {
     "location": "الموقع",
     "am": "ص",
     "bm": "م",
-    "workingtime": "وقت العمل"
+    "workingtime": "وقت العمل",
+    "offers": "العروض"
   };
   static const Map<String, dynamic> fa = {
     "languagesellect": "زبان مورد نظر خود را انتخاب کنید",
@@ -124,7 +125,8 @@ class CodegenLoader extends AssetLoader {
     "location": "محل",
     "am": "صبح",
     "bm": "بعد از ظهر",
-    "workingtime": "زمان کار"
+    "workingtime": "زمان کار",
+    "offers": "ارائه می دهد"
   };
   static const Map<String, dynamic> ru = {
     "languagesellect": "Выберите язык, который вы хотите",
@@ -179,7 +181,8 @@ class CodegenLoader extends AssetLoader {
     "location": "Расположение",
     "am": "AM",
     "bm": "PM",
-    "workingtime": "Рабочее время"
+    "workingtime": "Рабочее время",
+    "offers": "Предложения"
   };
   static const Map<String, dynamic> fr = {
     "languagesellect": "Choisissez la langue que vous voulez",
@@ -235,7 +238,8 @@ class CodegenLoader extends AssetLoader {
     "location": "Emplacement",
     "am": "AM",
     "bm": "PM",
-    "workingtime": "Temps de travail"
+    "workingtime": "Temps de travail",
+    "offers": "Des offres"
   };
   static const Map<String, dynamic> en = {
     "languagesellect": "Sellect your language",
@@ -291,7 +295,8 @@ class CodegenLoader extends AssetLoader {
     "location": "Location",
     "am": "AM",
     "bm": "PM",
-    "workingtime": "Working time"
+    "workingtime": "Working time",
+    "offers": "Offers"
   };
 
   static const Map<String, Map<String, dynamic>> mapLocales = {

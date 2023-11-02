@@ -31,7 +31,16 @@ class data {
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Make tako and showerma",
           "status": LocaleKeys.closed.tr(),
-          "offers": ["Free Dessert with Every Meal", "Happy Hour: 5 PM - 7 PM"]
+          "offers": [
+            {
+              "likes": 505,
+              "offer": "Free Dessert with Every Meal",
+            },
+            {
+              "likes": 505,
+              "offer": "Happy Hour: 5 PM - 7 PM",
+            },
+          ]
         },
         {
           "id": 1,
@@ -44,7 +53,13 @@ class data {
               " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
           "subtitle": "Fast food and vegetarian  ",
           "status": LocaleKeys.open.tr(),
-          "offers": ["10% off for Students", "Live Music on Fridays"]
+          "offers": [
+            {
+              "likes": 100,
+              "offer": "10% off for Students",
+            },
+            {"likes": 250, "offer": "Live Music on Fridays"}
+          ]
         },
         {
           "id": 2,
@@ -58,8 +73,11 @@ class data {
           "subtitle": "Fast food with delivery",
           "status": LocaleKeys.open.tr(),
           "offers": [
-            "Lunch Buffet: 12 PM - 2 PM",
-            "Buy One Get One Free: Pasta Dishes"
+            {
+              "likes": 100,
+              "offer": "10% off for Students",
+            },
+            {"likes": 250, "offer": "Live Music on Fridays"}
           ]
         },
         {
@@ -74,8 +92,11 @@ class data {
           "subtitle": "Fast food with delivery",
           "status": LocaleKeys.open.tr(),
           "offers": [
-            "Lunch Buffet: 12 PM - 2 PM",
-            "Buy One Get One Free: Pasta Dishes"
+            {
+              "likes": 100,
+              "offer": "10% off for Students",
+            },
+            {"likes": 250, "offer": "Live Music on Fridays"}
           ]
         },
         {
@@ -90,8 +111,11 @@ class data {
           "subtitle": "Fast food with delivery",
           "status": LocaleKeys.open.tr(),
           "offers": [
-            "Lunch Buffet: 12 PM - 2 PM",
-            "Buy One Get One Free: Pasta Dishes"
+            {
+              "likes": 100,
+              "offer": "10% off for Students",
+            },
+            {"likes": 250, "offer": "Live Music on Fridays"}
           ]
         },
         {
@@ -106,8 +130,11 @@ class data {
           "subtitle": "Fast food with delivery",
           "status": LocaleKeys.open.tr(),
           "offers": [
-            "Lunch Buffet: 12 PM - 2 PM",
-            "Buy One Get One Free: Pasta Dishes"
+            {
+              "likes": 1500,
+              "offer": "10% off for Students",
+            },
+            {"likes": 1000, "offer": "Live Music on Fridays"}
           ]
         }
       ]
@@ -119,34 +146,53 @@ class data {
       'shops': [
         {
           "id": 0,
-          "name": "Bank A",
-          "rate": 5.0,
+          "name": "Cityville Bank",
           "image": 'assets/images/bank/bank1.png',
+          "location": "123 Main St, Cityville",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "321 Bank St, Moneyville",
+          "subtitle": "Make tako and showerma",
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Personal and business banking services",
+              "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+          "rate": 4.0,
           "status": LocaleKeys.open.tr(),
-          "offers": ["Free Checking Account", "Business Loans Available"]
+          "offers": [
+            {"likes": 300, "offer": "Free Financial Consultation"},
+            {"likes": 450, "offer": "0% Interest on First Loan"}
+          ]
         },
         {
           "id": 1,
-          "name": "Bank B",
-          "rate": 5.0,
+          "name": "Townsville Credit Union",
           "image": 'assets/images/bank/bank1.png',
+          "location": "456 Elm St, Townsville",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "555 Finance Ave, Wealthburg",
+          "rate": 1.0,
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Savings and investment solutions",
+              "Townsville Credit Union is your community-oriented financial institution. We offer a variety of banking services, from checking accounts to credit cards, designed to meet the unique needs of our members.",
           "status": LocaleKeys.open.tr(),
           "offers": [
-            "High-Interest Savings Account",
-            "Financial Planning Services"
+            {"likes": 200, "offer": "Free Credit Score Check"},
+            {"likes": 350, "offer": "Bonus Rewards on New Accounts"}
           ]
         },
-      ],
+        {
+          "id": 2,
+          "name": "Villageland National Bank",
+          "image": 'assets/images/bank/bank1.png',
+          "location": "789 Oak St, Villageland",
+          "subtitle": "Make tako and showerma",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "rate": 5.0,
+          "description":
+              "Villageland National Bank is your reliable partner in finance. Our experienced team offers business banking solutions, corporate loans, and wealth management services to support your financial success.",
+          "status": LocaleKeys.closed.tr(),
+          "offers": [
+            {"likes": 150, "offer": "Exclusive Rewards for Business Clients"},
+            {"likes": 270, "offer": "Personalized Investment Strategies"}
+          ]
+        }
+      ]
     },
     {
       'id': 2,
@@ -155,94 +201,124 @@ class data {
       'shops': [
         {
           "id": 0,
-          "name": "Car Rental A",
-          "rate": 5.0,
-          "image": "assets/images/cars/car1.png",
+          "name": "Car Rental Company A",
+          "image": 'assets/images/cars/car1.png',
+          "location": "123 Main St, Cityville",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "123 Rental Ave, Cityville",
+          "rate": 5.0,
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Economy, Sedan, and SUV Rentals",
+              "Explore the city with our wide range of rental cars. From compact cars to SUVs, we offer the perfect vehicle for your needs. Our cars are well-maintained and ready for your next adventure.",
           "status": LocaleKeys.open.tr(),
-          "offers": ["Weekend Special: 20% off", "Free GPS with Every Rental"]
+          "offers": [
+            {
+              "likes": 505,
+              "offer": "10% Off Weekly Rentals",
+            },
+            {
+              "likes": 250,
+              "offer": "Free Upgrade on Premium Cars",
+            },
+          ]
         },
         {
           "id": 1,
-          "name": "Car Rental B",
-          "rate": 5.0,
-          "image": "assets/images/cars/car2.png",
+          "name": "Car Rental Company B",
+          "image": 'assets/images/cars/car2.png',
+          "location": "456 Elm St, Townsville",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "456 Drive St, Townsville",
+          "rate": 5.0,
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Luxury and Sports Car Rentals",
-          "status": LocaleKeys.open.tr(),
+              "Need a reliable car for your business trip or family vacation? Look no further. Our fleet of vehicles ensures you travel in comfort and style. Affordable rates and excellent service guaranteed.",
+          "status": LocaleKeys.closed.tr(),
           "offers": [
-            "10% off for Repeat Customers",
-            "Free Car Wash with Return"
+            {
+              "likes": 100,
+              "offer": "15% Off for Loyalty Members",
+            },
+            {"likes": 150, "offer": "Free GPS with Every Rental"}
           ]
         },
         {
           "id": 2,
-          "name": "Car Rental C",
-          "rate": 5.0,
-          "image": "assets/images/cars/car3.png",
+          "name": "Car Rental Company C",
+          "image": 'assets/images/cars/car3.png',
+          "location": "789 Oak St, Villageland",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "789 Highway Rd, Villageland",
+          "rate": 5.0,
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Family-friendly Minivans and SUVs",
-          "status": LocaleKeys.closed.tr(),
+              "Planning a road trip? We have the perfect car for your journey. Our friendly staff is here to assist you in choosing the right vehicle. Quality cars, great prices, and exceptional service.",
+          "status": LocaleKeys.open.tr(),
           "offers": [
-            "Monthly Rental: 15% Discount",
-            "Child Car Seats Available"
+            {
+              "likes": 200,
+              "offer": "20% Off Midweek Rentals",
+            },
+            {"likes": 180, "offer": "Free Child Seat with Family Rentals"}
           ]
         },
         {
           "id": 3,
-          "name": "Car Rental D",
-          "rate": 5.0,
-          "image": "assets/images/cars/car4.png",
+          "name": "Car Rental Company A",
+          "image": 'assets/images/cars/car4.png',
+          "location": "123 Main St, Cityville",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "101 Renting Blvd, Countryside",
+          "rate": 5.0,
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Electric and Hybrid Car Rentals",
+              "Explore the city with our wide range of rental cars. From compact cars to SUVs, we offer the perfect vehicle for your needs. Our cars are well-maintained and ready for your next adventure.",
           "status": LocaleKeys.open.tr(),
           "offers": [
-            "Green Fleet: Eco-friendly Options",
-            "Free Charging Stations"
+            {
+              "likes": 505,
+              "offer": "10% Off Weekly Rentals",
+            },
+            {
+              "likes": 250,
+              "offer": "Free Upgrade on Premium Cars",
+            },
           ]
         },
         {
           "id": 4,
-          "name": "Car Rental E",
-          "rate": 5.0,
-          "image": "assets/images/cars/car5.png",
+          "name": "Car Rental Company B",
+          "image": 'assets/images/cars/car5.png',
+          "location": "456 Elm St, Townsville",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "202 Rent Lane, Mountainview",
+          "rate": 5.0,
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Budget-Friendly Compact Cars",
-          "status": LocaleKeys.open.tr(),
-          "offers": ["Unlimited Mileage Packages", "Senior Citizen Discounts"]
+              "Need a reliable car for your business trip or family vacation? Look no further. Our fleet of vehicles ensures you travel in comfort and style. Affordable rates and excellent service guaranteed.",
+          "status": LocaleKeys.closed.tr(),
+          "offers": [
+            {
+              "likes": 100,
+              "offer": "15% Off for Loyalty Members",
+            },
+            {"likes": 150, "offer": "Free GPS with Every Rental"}
+          ]
         },
         {
           "id": 5,
-          "name": "Car Rental F",
-          "rate": 5.0,
-          "image": "assets/images/cars/car6.png",
+          "name": "Car Rental Company C",
+          "image": 'assets/images/cars/car6.png',
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "rate": 5.0,
+          "location": "789 Oak St, Villageland",
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "location": "303 Drive Way, Lakeside",
-          "subtitle": "Off-Road and Adventure Vehicles",
+              "Planning a road trip? We have the perfect car for your journey. Our friendly staff is here to assist you in choosing the right vehicle. Quality cars, great prices, and exceptional service.",
           "status": LocaleKeys.open.tr(),
           "offers": [
-            "4x4 Rentals for Outdoor Enthusiasts",
-            "Roadside Assistance Included"
+            {
+              "likes": 200,
+              "offer": "20% Off Midweek Rentals",
+            },
+            {"likes": 180, "offer": "Free Child Seat with Family Rentals"}
           ]
-        }
+        },
       ],
     },
     {
@@ -252,89 +328,52 @@ class data {
       'shops': [
         {
           "id": 0,
-          "name": "Glow Beauty Clinic",
-          "rate": 5.0,
-          "image": "assets/images/beauty/beauty1.png",
+          "name": "Cityville Spa & Wellness",
+          "image": 'assets/images/beauty.png',
+          "location": "123 Main St, Cityville",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "123 Beauty Street, Cityville",
-          "subtitle": "Specializing in Skincare and Facial Treatments",
+          "rate": 5.0,
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
+              "Cityville Spa & Wellness offers a range of rejuvenating treatments, including massages, facials, and body scrubs. Our skilled therapists and tranquil atmosphere ensure a relaxing experience, promoting both health and beauty.",
           "status": LocaleKeys.open.tr(),
           "offers": [
-            "Complimentary Skin Consultation",
-            "10% Off First Treatment"
+            {"likes": 200, "offer": "Complimentary Aromatherapy Upgrade"},
+            {"likes": 350, "offer": "Weekend Couples Massage Package"}
           ]
         },
         {
           "id": 1,
-          "name": "Radiant Skin Clinic",
-          "rate": 5.0,
-          "image": "assets/images/beauty/beauty1.png",
+          "name": "Glow Beauty Salon",
+          "image": 'assets/images/beauty.png',
+          "location": "456 Elm St, Townsville",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "456 Complexion Avenue, Townsville",
-          "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Experts in Dermatology and Anti-Aging",
-          "status": LocaleKeys.open.tr(),
-          "offers": ["Botox and Dermal Filler Packages", "Customized Facials"]
-        },
-        {
-          "id": 2,
-          "name": "Elegance Wellness Center",
           "rate": 5.0,
-          "image": "assets/images/beauty/beauty1.png",
-          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "789 Beauty Boulevard, Villageland",
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Holistic Health and Beauty Solutions",
+              "Glow Beauty Salon offers a range of beauty services, including haircuts, styling, and manicures. Our skilled stylists and beauticians stay updated with the latest trends to enhance your natural beauty.",
           "status": LocaleKeys.open.tr(),
-          "offers": [
-            "Massage Therapy: Relaxation and Deep Tissue",
-            "Weight Loss Programs"
+          "specials": [
+            {"likes": 180, "offer": "Free Hair Treatment with Haircut"},
+            {"likes": 250, "offer": "Bridal Makeup Package"}
           ]
         },
         {
-          "id": 3,
-          "name": "Youthful Essence Clinic",
-          "rate": 5.0,
-          "image": "assets/images/beauty/beauty1.png",
-          "location": "101 Ageless Lane, Countryside",
+          "id": 2,
+          "name": "Villageland Fitness Center",
+          "image": 'assets/images/beauty.png',
+          "location": "789 Oak St, Villageland",
+          "subtitle": "Make tako and showerma",
           "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Specialists in Non-Surgical Facelifts",
-          "status": LocaleKeys.open.tr(),
-          "offers": ["PDO Thread Lifts", "Microdermabrasion Treatments"]
-        },
-        {
-          "id": 4,
-          "name": "Harmony Beauty Studio",
           "rate": 5.0,
-          "image": "assets/images/beauty/beauty1.png",
-          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "202 Serenity Street, Mountainview",
           "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Hair, Nail, and Makeup Services",
-          "status": LocaleKeys.open.tr(),
-          "offers": ["Hair Coloring and Styling", "Manicures and Pedicures"]
-        },
-        {
-          "id": 5,
-          "name": "Pure Radiance Aesthetics",
-          "rate": 5.0,
-          "image": "assets/images/beauty/beauty1.png",
-          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "location": "303 Glow Avenue, Lakeside",
-          "description":
-              " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
-          "subtitle": "Cosmetic Procedures and Skin Rejuvenation",
-          "status": LocaleKeys.open.tr(),
-          "offers": ["Laser Hair Removal Packages", "PRP Therapy for Hair Loss"]
+              "Villageland Fitness Center offers state-of-the-art equipment, fitness classes, and personalized training programs. Our certified trainers are dedicated to helping you achieve your fitness and wellness goals.",
+          "offers": [
+            {"likes": 300, "offer": "Free Trial Yoga Class"},
+            {"likes": 220, "offer": "Discounted Personal Training Package"}
+          ]
         }
-      ],
+      ]
     },
     {
       'id': 4,

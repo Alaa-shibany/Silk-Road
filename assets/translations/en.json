@@ -52,5 +52,6 @@
     "location":"Location",
     "am":"AM",
     "bm":"PM",
-    "workingtime" :"Working time"
+    "workingtime" :"Working time",
+    "offers":"Offers"
 }

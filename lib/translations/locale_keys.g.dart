@@ -56,4 +56,5 @@ abstract class LocaleKeys {
   static const am = 'am';
   static const bm = 'bm';
   static const workingtime = 'workingtime';
+  static const offers = 'offers';
 }

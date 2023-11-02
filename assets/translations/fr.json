@@ -52,6 +52,7 @@
     "location":"Emplacement",
     "am":"AM",
     "bm":"PM",
-    "workingtime" :"Temps de travail"
+    "workingtime" :"Temps de travail",
+    "offers":"Des offres"
 
 }

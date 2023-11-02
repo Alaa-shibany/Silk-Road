@@ -33,7 +33,7 @@ class ShopWidget extends StatelessWidget {
           child: Stack(
             children: [
               Hero(
-                tag: shopId,
+                tag: '$shopId-$title',
                 child: FadeInImage(
                   placeholder: MemoryImage(kTransparentImage),
                   image: AssetImage(imageUrl),

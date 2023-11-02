@@ -52,5 +52,6 @@
     "location":"محل",
     "am":"صبح",
     "bm":"بعد از ظهر",
-    "workingtime" :"زمان کار"
+    "workingtime" :"زمان کار",
+    "offers":"ارائه می دهد"
 }

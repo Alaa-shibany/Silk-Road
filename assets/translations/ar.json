@@ -52,5 +52,6 @@
     "location":"الموقع",
     "am":"ص",
     "bm":"م",
-    "workingtime" :"وقت العمل"
+    "workingtime" :"وقت العمل",
+    "offers":"العروض"
 }
