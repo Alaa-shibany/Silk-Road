@@ -53,6 +53,11 @@
     "am":"AM",
     "bm":"PM",
     "workingtime" :"Temps de travail",
-    "offers":"Des offres"
+    "offers":"Des offres",
+    "orderby":"Commandé par",
+    "fromhightolow" :"De haut en bas",
+    "fromlowtohigh":"De bas en haut",
+    "all":"Tout",
+    "alloffers":"Toutes les offres"
 
 }

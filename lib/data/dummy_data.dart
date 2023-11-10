@@ -353,7 +353,7 @@ class data {
           "description":
               "Glow Beauty Salon offers a range of beauty services, including haircuts, styling, and manicures. Our skilled stylists and beauticians stay updated with the latest trends to enhance your natural beauty.",
           "status": LocaleKeys.open.tr(),
-          "specials": [
+          "offers": [
             {"likes": 180, "offer": "Free Hair Treatment with Haircut"},
             {"likes": 250, "offer": "Bridal Makeup Package"}
           ]

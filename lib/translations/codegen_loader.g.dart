@@ -69,7 +69,12 @@ class CodegenLoader extends AssetLoader {
     "am": "ص",
     "bm": "م",
     "workingtime": "وقت العمل",
-    "offers": "العروض"
+    "offers": "العروض",
+    "orderby": "ترتيب حسب",
+    "fromhightolow": "من الأعلى إل الأقل",
+    "fromlowtohigh": "من الأقل إلى الأعلى",
+    "all": "الكل",
+    "alloffers": "كل العروض"
   };
   static const Map<String, dynamic> fa = {
     "languagesellect": "زبان مورد نظر خود را انتخاب کنید",
@@ -126,7 +131,12 @@ class CodegenLoader extends AssetLoader {
     "am": "صبح",
     "bm": "بعد از ظهر",
     "workingtime": "زمان کار",
-    "offers": "ارائه می دهد"
+    "offers": "ارائه می دهد",
+    "orderby": "سفارش توسط",
+    "fromhightolow": "از بالا به پایین",
+    "fromlowtohigh": "از پایین به بالا",
+    "all": "همه",
+    "alloffers": "همه پیشنهادات"
   };
   static const Map<String, dynamic> ru = {
     "languagesellect": "Выберите язык, который вы хотите",
@@ -182,7 +192,12 @@ class CodegenLoader extends AssetLoader {
     "am": "AM",
     "bm": "PM",
     "workingtime": "Рабочее время",
-    "offers": "Предложения"
+    "offers": "Предложения",
+    "orderby": "Сортировать по",
+    "fromhightolow": "От высокого до низкого",
+    "fromlowtohigh": "От низкого к высокому",
+    "all": "Все",
+    "alloffers": "Все предложения"
   };
   static const Map<String, dynamic> fr = {
     "languagesellect": "Choisissez la langue que vous voulez",
@@ -239,7 +254,12 @@ class CodegenLoader extends AssetLoader {
     "am": "AM",
     "bm": "PM",
     "workingtime": "Temps de travail",
-    "offers": "Des offres"
+    "offers": "Des offres",
+    "orderby": "Commandé par",
+    "fromhightolow": "De haut en bas",
+    "fromlowtohigh": "De bas en haut",
+    "all": "Tout",
+    "alloffers": "Toutes les offres"
   };
   static const Map<String, dynamic> en = {
     "languagesellect": "Sellect your language",
@@ -296,7 +316,12 @@ class CodegenLoader extends AssetLoader {
     "am": "AM",
     "bm": "PM",
     "workingtime": "Working time",
-    "offers": "Offers"
+    "offers": "Offers",
+    "orderby": "Order by",
+    "fromhightolow": "From high to low",
+    "fromlowtohigh": "From low to high",
+    "all": "All",
+    "alloffers": "All offers"
   };
 
   static const Map<String, Map<String, dynamic>> mapLocales = {

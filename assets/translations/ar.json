@@ -53,5 +53,10 @@
     "am":"ص",
     "bm":"م",
     "workingtime" :"وقت العمل",
-    "offers":"العروض"
+    "offers":"العروض",
+    "orderby":"ترتيب حسب",
+    "fromhightolow" :"من الأعلى إل الأقل",
+    "fromlowtohigh":"من الأقل إلى الأعلى",
+    "all":"الكل",
+    "alloffers":"كل العروض"
 }

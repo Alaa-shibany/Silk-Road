@@ -57,4 +57,9 @@ abstract class LocaleKeys {
   static const bm = 'bm';
   static const workingtime = 'workingtime';
   static const offers = 'offers';
+  static const orderby = 'orderby';
+  static const fromhightolow = 'fromhightolow';
+  static const fromlowtohigh = 'fromlowtohigh';
+  static const all = 'all';
+  static const alloffers = 'alloffers';
 }

@@ -53,5 +53,10 @@
     "am":"AM",
     "bm":"PM",
     "workingtime" :"Working time",
-    "offers":"Offers"
+    "offers":"Offers",
+    "orderby":"Order by",
+    "fromhightolow" :"From high to low",
+    "fromlowtohigh":"From low to high",
+    "all":"All",
+    "alloffers":"All offers"
 }

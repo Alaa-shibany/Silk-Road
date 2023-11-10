@@ -84,7 +84,16 @@ class OfferWidget extends StatelessWidget {
                   ),
                   Text(
                     offers[index]['shop']['offer']['likes'].toString(),
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                          blurRadius: 0.0, // Spread of the shadow
+                          color: Colors.white, // Shadow color
+                          offset: Offset(1.0, 1.0), // Shadow offset
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),

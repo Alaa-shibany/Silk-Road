@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:silk_road/common/transition.dart';
 import 'package:silk_road/models/constants.dart';
 import 'package:silk_road/screens/auth_screen.dart';
 import 'package:silk_road/widgets/start_screen/language_list_widget.dart';
@@ -70,9 +71,8 @@ class _StartScreenState extends State<StartScreen> {
                   Constants.DidSelectLanguage = true;
                 });
 
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const AuthScreen(),
-                ));
+                Navigator.of(context)
+                    .push(customPageRouteBuilder(const AuthScreen()));
               },
               label: Text(
                 LocaleKeys.next.tr(),
