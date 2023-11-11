@@ -8,10 +8,12 @@ class HomeOffersWidget extends StatelessWidget {
       required this.physics,
       required this.mediaQuery,
       required this.offers,
-      required this.length});
+      required this.length,
+      required this.allOffers});
   final Size mediaQuery;
   final List offers;
   ScrollPhysics? physics;
+  final List allOffers;
 
   final int length;
 
@@ -33,7 +35,10 @@ class HomeOffersWidget extends StatelessWidget {
       itemCount: length,
       itemBuilder: (context, index) {
         return OfferWidget(
-            mediaQuery: mediaQuery, offers: offers, index: index);
+          mediaQuery: mediaQuery,
+          offers: offers[index],
+          allOffersForShop: allOffers,
+        );
       },
     );
   }

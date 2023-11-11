@@ -1,10 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:like_button/like_button.dart';
 import 'package:silk_road/translations/locale_keys.g.dart';
 import 'package:silk_road/widgets/shop_details_screen/details_widget.dart';
 import 'package:silk_road/widgets/shop_details_screen/hero_image_widget.dart';
 import 'package:silk_road/widgets/shop_details_screen/more_info_widget.dart';
+import 'package:silk_road/widgets/shop_details_screen/offer_shop_widget.dart';
 import 'package:silk_road/widgets/shop_details_screen/rate_button.dart';
 
 // ignore: must_be_immutable
@@ -81,21 +83,68 @@ class _ShopDetailsScreenState extends State<ShopDetailsScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: Stack(
-        children: [
-          HeroImageWidget(
-              mediaQuery: mediaQuery, shopDetails: widget.shopDetails),
-          SingleChildScrollView(
-            child: Column(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stack(
               children: [
-                DetailsWidget(
+                HeroImageWidget(
                     mediaQuery: mediaQuery, shopDetails: widget.shopDetails),
-                MoreInfoWidget(
-                    mediaQuery: mediaQuery, shopDetails: widget.shopDetails),
+                Container(
+                  margin: EdgeInsets.only(
+                      left: mediaQuery.width / 40,
+                      right: mediaQuery.width / 40,
+                      top: mediaQuery.width / 1.55),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      GestureDetector(
+                        onTap: () => print(widget.shopDetails),
+                        child: DetailsWidget(
+                            mediaQuery: mediaQuery,
+                            shopDetails: widget.shopDetails),
+                      ),
+                      MoreInfoWidget(
+                          mediaQuery: mediaQuery,
+                          shopDetails: widget.shopDetails),
+                      SizedBox(
+                        height: mediaQuery.height / 50,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: mediaQuery.width / 22),
+                        child: Text(
+                          LocaleKeys.offers.tr(),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: mediaQuery.height / 50),
+                        ),
+                      ),
+                      ListView.builder(
+                        shrinkWrap: true,
+                        padding:
+                            EdgeInsets.only(bottom: mediaQuery.height / 40),
+                        physics: const NeverScrollableScrollPhysics(),
+                        itemCount: widget.shopDetails['offers'].length,
+                        itemBuilder: (context, index) {
+                          bool isLiked = false;
+                          return OfferShopWidget(
+                              mediaQuery: mediaQuery,
+                              isLiked: isLiked,
+                              offerTitle: widget.shopDetails['offers'][index]
+                                  ['offer'],
+                              likes: widget.shopDetails['offers'][index]
+                                  ['likes']);
+                        },
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

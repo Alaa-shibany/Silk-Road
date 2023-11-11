@@ -145,7 +145,7 @@ class data {
       'image': 'assets/images/bank.png',
       'shops': [
         {
-          "id": 0,
+          "id": 6,
           "name": "Cityville Bank",
           "image": 'assets/images/bank/bank1.png',
           "location": "123 Main St, Cityville",
@@ -161,7 +161,7 @@ class data {
           ]
         },
         {
-          "id": 1,
+          "id": 7,
           "name": "Townsville Credit Union",
           "image": 'assets/images/bank/bank1.png',
           "location": "456 Elm St, Townsville",
@@ -177,7 +177,7 @@ class data {
           ]
         },
         {
-          "id": 2,
+          "id": 8,
           "name": "Villageland National Bank",
           "image": 'assets/images/bank/bank1.png',
           "location": "789 Oak St, Villageland",
@@ -200,7 +200,7 @@ class data {
       'image': 'assets/images/vehicle.png',
       'shops': [
         {
-          "id": 0,
+          "id": 9,
           "name": "Car Rental Company A",
           "image": 'assets/images/cars/car1.png',
           "location": "123 Main St, Cityville",
@@ -222,7 +222,7 @@ class data {
           ]
         },
         {
-          "id": 1,
+          "id": 10,
           "name": "Car Rental Company B",
           "image": 'assets/images/cars/car2.png',
           "location": "456 Elm St, Townsville",
@@ -241,7 +241,7 @@ class data {
           ]
         },
         {
-          "id": 2,
+          "id": 11,
           "name": "Car Rental Company C",
           "image": 'assets/images/cars/car3.png',
           "location": "789 Oak St, Villageland",
@@ -260,7 +260,7 @@ class data {
           ]
         },
         {
-          "id": 3,
+          "id": 12,
           "name": "Car Rental Company A",
           "image": 'assets/images/cars/car4.png',
           "location": "123 Main St, Cityville",
@@ -282,7 +282,7 @@ class data {
           ]
         },
         {
-          "id": 4,
+          "id": 13,
           "name": "Car Rental Company B",
           "image": 'assets/images/cars/car5.png',
           "location": "456 Elm St, Townsville",
@@ -301,7 +301,7 @@ class data {
           ]
         },
         {
-          "id": 5,
+          "id": 14,
           "name": "Car Rental Company C",
           "image": 'assets/images/cars/car6.png',
           "subtitle": "Make tako and showerma",
@@ -327,7 +327,7 @@ class data {
       'image': 'assets/images/beauty.png',
       'shops': [
         {
-          "id": 0,
+          "id": 15,
           "name": "Cityville Spa & Wellness",
           "image": 'assets/images/beauty.png',
           "location": "123 Main St, Cityville",
@@ -343,7 +343,7 @@ class data {
           ]
         },
         {
-          "id": 1,
+          "id": 16,
           "name": "Glow Beauty Salon",
           "image": 'assets/images/beauty.png',
           "location": "456 Elm St, Townsville",
@@ -359,7 +359,7 @@ class data {
           ]
         },
         {
-          "id": 2,
+          "id": 17,
           "name": "Villageland Fitness Center",
           "image": 'assets/images/beauty.png',
           "location": "789 Oak St, Villageland",

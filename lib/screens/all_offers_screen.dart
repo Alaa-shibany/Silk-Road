@@ -168,6 +168,7 @@ class _AllOffersScreenState extends State<AllOffersScreen> {
             Container(
               margin: EdgeInsets.only(top: mediaQuery.height / 3.5),
               child: HomeOffersWidget(
+                allOffers: [],
                 physics: null,
                 mediaQuery: mediaQuery,
                 offers: searchOffers,

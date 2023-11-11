@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   List offers = [];
   bool isLoading = false;
+  List allShops = [];
 
   Future<void> getData() async {
     setState(() {
@@ -52,6 +53,12 @@ class _HomeScreenState extends State<HomeScreen>
         }
       }
     }
+
+    for (int i = 0; i < data.sectorsList.length; i++) {
+      for (int j = 0; j < data.sectorsList[i]['shops'].length; j++) {
+        allShops.add(data.sectorsList[i]['shops'][j]);
+      }
+    }
     setState(() {
       isLoading = false;
     });
@@ -61,6 +68,7 @@ class _HomeScreenState extends State<HomeScreen>
   void initState() {
     super.initState();
     getData();
+    print(allShops);
   }
 
   @override
@@ -140,6 +148,7 @@ class _HomeScreenState extends State<HomeScreen>
                     height: mediaQuery.height / 1.3,
                     width: double.infinity,
                     child: HomeOffersWidget(
+                        allOffers: allShops,
                         physics: const NeverScrollableScrollPhysics(),
                         length: 6,
                         mediaQuery: mediaQuery,

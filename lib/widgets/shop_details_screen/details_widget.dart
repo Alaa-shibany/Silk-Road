@@ -15,10 +15,7 @@ class DetailsWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(
           horizontal: mediaQuery.width / 20, vertical: mediaQuery.height / 50),
-      margin: EdgeInsets.only(
-          left: mediaQuery.width / 40,
-          right: mediaQuery.width / 40,
-          top: mediaQuery.width / 1.55),
+
       width: double.infinity,
       // height: mediaQuery.height / 3,
       decoration: BoxDecoration(

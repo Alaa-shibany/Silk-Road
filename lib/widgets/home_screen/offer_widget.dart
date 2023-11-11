@@ -1,31 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../screens/shop_details_screen.dart';
 import '../../styles/app_colors.dart';
 
-class OfferWidget extends StatelessWidget {
+class OfferWidget extends StatefulWidget {
   const OfferWidget(
       {super.key,
       required this.mediaQuery,
       required this.offers,
-      required this.index});
+      required this.allOffersForShop});
   final Size mediaQuery;
-  final List offers;
-  final int index;
+  final Map offers;
+  final List allOffersForShop;
 
+  @override
+  State<OfferWidget> createState() => _OfferWidgetState();
+}
+
+class _OfferWidgetState extends State<OfferWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) =>
-              ShopDetailsScreen(shopDetails: offers[index]['shop']),
-        ));
+        // Navigator.of(context).push(MaterialPageRoute(
+        //   builder: (context) => ShopDetailsScreen(
+        //       shopDetails: widget.offers[widget.index]['shop']),
+        // ));
       },
       child: Container(
-        width: mediaQuery.width / 2.5,
-        height: mediaQuery.height / 5,
+        width: widget.mediaQuery.width / 2.5,
+        height: widget.mediaQuery.height / 5,
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
@@ -43,26 +47,26 @@ class OfferWidget extends StatelessWidget {
               children: [
                 Hero(
                   tag:
-                      '${offers[index]['shop']['id']}-${offers[index]['shop']['name']}',
+                      '${widget.offers['shop']['id']}-${widget.offers['shop']['name']}',
                   child: Image.asset(
-                    offers[index]['shop']['image'],
+                    widget.offers['shop']['image'],
                     fit: BoxFit.cover,
-                    height: mediaQuery.height / 8,
+                    height: widget.mediaQuery.height / 8,
                     width: double.infinity,
                   ),
                 ),
                 SizedBox(
-                  height: mediaQuery.height / 100,
+                  height: widget.mediaQuery.height / 100,
                 ),
                 Text(
-                  offers[index]['shop']['name'],
+                  widget.offers['shop']['name'],
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
                 Padding(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: mediaQuery.width / 40),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: widget.mediaQuery.width / 40),
                   child: Text(
-                    offers[index]['shop']['offer']['offer'],
+                    widget.offers['shop']['offer']['offer'],
                     maxLines: 2,
                     textAlign: TextAlign.center,
                     overflow: TextOverflow.ellipsis,
@@ -71,7 +75,8 @@ class OfferWidget extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: mediaQuery.width / 80),
+              padding: EdgeInsets.symmetric(
+                  horizontal: widget.mediaQuery.width / 80),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -83,7 +88,7 @@ class OfferWidget extends StatelessWidget {
                     color: AppColors.sinkColor,
                   ),
                   Text(
-                    offers[index]['shop']['offer']['likes'].toString(),
+                    widget.offers['shop']['offer']['likes'].toString(),
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       shadows: [
