@@ -11,17 +11,15 @@ import '../../styles/app_colors.dart';
 import '../form_widget.dart';
 
 // ignore: must_be_immutable
-class FormCreatAccountWidget extends StatefulWidget {
-  FormCreatAccountWidget({super.key, required this.mediaQuery});
+class MainPageWidget extends StatefulWidget {
+  MainPageWidget({super.key, required this.mediaQuery});
   Size mediaQuery;
 
   @override
-  State<FormCreatAccountWidget> createState() => _FormCreatAccountWidgetState();
+  State<MainPageWidget> createState() => _FormCreatAccountWidgetState();
 }
 
-class _FormCreatAccountWidgetState extends State<FormCreatAccountWidget> {
-  FocusNode fistNameNode = FocusNode();
-  FocusNode lastNameNode = FocusNode();
+class _FormCreatAccountWidgetState extends State<MainPageWidget> {
   FocusNode passNode = FocusNode();
   FocusNode repassNode = FocusNode();
   FocusNode nameNode = FocusNode();
@@ -31,8 +29,6 @@ class _FormCreatAccountWidgetState extends State<FormCreatAccountWidget> {
   FocusNode securityNode = FocusNode();
   final _formKey = GlobalKey<FormState>();
 
-  String firstName = '';
-  String lastName = '';
   String email = '';
   String password = '';
   String repassword = '';
@@ -76,143 +72,6 @@ class _FormCreatAccountWidgetState extends State<FormCreatAccountWidget> {
                 ),
                 SizedBox(
                   height: widget.mediaQuery.height / 30,
-                ),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Stack(
-                      children: [
-                        Container(
-                          height: widget.mediaQuery.height / 16,
-                          width: widget.mediaQuery.width / 2.5,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                        ),
-                        Container(
-                          width: widget.mediaQuery.width / 2.5,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: TextFormField(
-                            textInputAction: TextInputAction.next,
-                            focusNode: fistNameNode,
-                            keyboardType: TextInputType.name,
-                            decoration: InputDecoration(
-                              fillColor: Colors.white,
-                              labelText: LocaleKeys.firstName.tr(),
-                              labelStyle: const TextStyle(color: Colors.black),
-                              hintText: LocaleKeys.firstName.tr(),
-                              hintStyle: const TextStyle(color: Colors.black38),
-                              contentPadding: const EdgeInsets.symmetric(
-                                  horizontal: 20, vertical: 15),
-                              // Add padding
-                              focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30),
-                                borderSide: BorderSide(
-                                    color: AppColors.sinkColor, width: 2.0),
-                              ),
-                              enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30),
-                                borderSide: BorderSide(
-                                    color: AppColors.sinkColor, width: 2.0),
-                              ),
-                              errorBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30),
-                                borderSide: const BorderSide(
-                                    color: Colors.red, width: 2.0),
-                              ),
-                              focusedErrorBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30),
-                                borderSide: const BorderSide(
-                                    color: Colors.red, width: 2.0),
-                              ),
-                            ),
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return LocaleKeys.enterseccod.tr();
-                              }
-                              setState(() {
-                                firstName = value;
-                              });
-                              return null;
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: widget.mediaQuery.width / 30,
-                    ),
-                    Stack(
-                      children: [
-                        Container(
-                          height: widget.mediaQuery.height / 16,
-                          width: widget.mediaQuery.width / 2.5,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                        ),
-                        Container(
-                          width: widget.mediaQuery.width / 2.5,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: TextFormField(
-                            keyboardType: TextInputType.name,
-                            textInputAction: TextInputAction.next,
-                            focusNode: lastNameNode,
-                            onFieldSubmitted: (value) {
-                              FocusScope.of(context).requestFocus(nameNode);
-                            },
-                            decoration: InputDecoration(
-                              labelText: LocaleKeys.lastName.tr(),
-                              labelStyle: const TextStyle(color: Colors.black),
-                              hintText: LocaleKeys.lastName.tr(),
-                              hintStyle: const TextStyle(color: Colors.black38),
-                              contentPadding: const EdgeInsets.symmetric(
-                                  horizontal: 20, vertical: 15),
-                              // Add padding
-                              focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30),
-                                borderSide: BorderSide(
-                                    color: AppColors.sinkColor, width: 2.0),
-                              ),
-                              enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30),
-                                borderSide: BorderSide(
-                                    color: AppColors.sinkColor, width: 2.0),
-                              ),
-                              errorBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30),
-                                borderSide: const BorderSide(
-                                    color: Colors.red, width: 2.0),
-                              ),
-                              focusedErrorBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30),
-                                borderSide: const BorderSide(
-                                    color: Colors.red, width: 2.0),
-                              ),
-                            ),
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return LocaleKeys.valexpierydate.tr();
-                              }
-                              setState(() {
-                                lastName = value;
-                              });
-                              return null;
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: widget.mediaQuery.height / 40,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(
@@ -506,34 +365,29 @@ class _FormCreatAccountWidgetState extends State<FormCreatAccountWidget> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    print('first name = $firstName');
-                    print('last name = $lastName');
-                    print('email = $email');
-                    print('password = $password');
-                    print('image url = $userImage');
-                    print('user name on card = $userNameOnCard');
-                    print('number on card = $userNumberOnCard');
-                    print('expire date = $userExpirdate');
-                    print('security code = $userSecuritycode');
                     _formKey.currentState!.validate();
                     if (_formKey.currentState!.validate()) {
-                      data.dummy_data.add(
-                        {
-                          'role': 'Tourist',
-                          'name': '$firstName $lastName',
-                          'id': data.dummy_data.last['id'] + 1,
-                          'email': email,
-                          'password': password,
-                          'image': userImage,
-                          'nameOnCard': userNameOnCard,
-                          'numberOnCard': userNumberOnCard,
-                          'expiryDate': userExpirdate,
-                          'security': userSecuritycode,
-                        },
-                      );
-                      print(data.dummy_data);
-                      Navigator.pop(context);
+                      // print(email);
+                      // print(password);
+                      // print(userImagePath);
+                      // print(userNameOnCard);
+                      // print(userNumberOnCard);
+                      // print(userExpirdate);
+                      // print(userSecuritycode);
+                      data.dummy_data.add({
+                        'role': 'Tourist',
+                        'id': data.dummy_data.first['id'] + 1,
+                        'email': email,
+                        'password': password,
+                        'image': userImagePath,
+                        'nameOnCard': userNameOnCard,
+                        'numberOnCard': userNumberOnCard,
+                        'expiryDate': userExpirdate,
+                        'security': userSecuritycode,
+                      });
+                      // print(data.dummy_data);
                     }
+                    Navigator.pop(context);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.darkPurpulColor,

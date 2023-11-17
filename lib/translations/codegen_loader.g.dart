@@ -74,7 +74,14 @@ class CodegenLoader extends AssetLoader {
     "fromhightolow": "من الأعلى إل الأقل",
     "fromlowtohigh": "من الأقل إلى الأعلى",
     "all": "الكل",
-    "alloffers": "كل العروض"
+    "alloffers": "كل العروض",
+    "firstName": "الاسم",
+    "last name": "الكنية",
+    "logout": "تسجيل الخروج",
+    "language": "اللغة",
+    "user": "المستخدم",
+    "deleteAccount": "حذف الحساب",
+    "card": "البطاقة"
   };
   static const Map<String, dynamic> fa = {
     "languagesellect": "زبان مورد نظر خود را انتخاب کنید",
@@ -136,7 +143,14 @@ class CodegenLoader extends AssetLoader {
     "fromhightolow": "از بالا به پایین",
     "fromlowtohigh": "از پایین به بالا",
     "all": "همه",
-    "alloffers": "همه پیشنهادات"
+    "alloffers": "همه پیشنهادات",
+    "firstName": "نام کوچک",
+    "last name": "نام خانوادگی",
+    "logout": "خروج",
+    "language": "زبان",
+    "card": "کارت",
+    "user": "کاربر",
+    "deleteAccount": "حذف حساب کاربری"
   };
   static const Map<String, dynamic> ru = {
     "languagesellect": "Выберите язык, который вы хотите",
@@ -197,7 +211,14 @@ class CodegenLoader extends AssetLoader {
     "fromhightolow": "От высокого до низкого",
     "fromlowtohigh": "От низкого к высокому",
     "all": "Все",
-    "alloffers": "Все предложения"
+    "alloffers": "Все предложения",
+    "firstName": "имя",
+    "last name": "фамилия",
+    "logout": "выйти",
+    "language": "язык",
+    "card": "карта",
+    "user": "пользователь",
+    "deleteAccount": "удалить аккаунт"
   };
   static const Map<String, dynamic> fr = {
     "languagesellect": "Choisissez la langue que vous voulez",
@@ -259,7 +280,14 @@ class CodegenLoader extends AssetLoader {
     "fromhightolow": "De haut en bas",
     "fromlowtohigh": "De bas en haut",
     "all": "Tout",
-    "alloffers": "Toutes les offres"
+    "alloffers": "Toutes les offres",
+    "firstName": "prénom",
+    "last name": "nom de famille",
+    "logout": "Se déconnecter",
+    "language": "langue",
+    "card": "carte",
+    "user": "utilisatrice",
+    "deleteAccount": "Supprimer le compte"
   };
   static const Map<String, dynamic> en = {
     "languagesellect": "Sellect your language",
@@ -321,7 +349,14 @@ class CodegenLoader extends AssetLoader {
     "fromhightolow": "From high to low",
     "fromlowtohigh": "From low to high",
     "all": "All",
-    "alloffers": "All offers"
+    "alloffers": "All offers",
+    "firstName": "first name",
+    "last name": "last name",
+    "logout": "logout",
+    "language": "language",
+    "card": "card",
+    "user": "user",
+    "deleteAccount": "delete account"
   };
 
   static const Map<String, Map<String, dynamic>> mapLocales = {

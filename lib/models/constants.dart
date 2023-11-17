@@ -1,3 +1,5 @@
+import 'package:silk_road/screens/account_screen.dart';
+
 import '../screens/home_screen.dart';
 import '../screens/sectors_screen.dart';
 
@@ -9,6 +11,6 @@ class Constants {
     const HomeScreen(),
     const HomeScreen(),
     const SectorsScreen(),
-    const HomeScreen(),
+    const AccountScreen(),
   ];
 }

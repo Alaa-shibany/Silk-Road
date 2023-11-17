@@ -31,6 +31,7 @@ class SectorsListWidget extends StatelessWidget {
               ),
             )),
             child: Container(
+              alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: mediaQuery.width / 50),
               padding: EdgeInsets.symmetric(
                   horizontal: mediaQuery.width / 50,

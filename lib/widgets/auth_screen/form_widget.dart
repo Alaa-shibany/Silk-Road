@@ -3,6 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:silk_road/common/snack_bar_widget.dart';
 import 'package:silk_road/data/dummy_data.dart';
+import 'package:silk_road/models/user.dart';
 import 'package:silk_road/screens/create_account_screen.dart';
 import 'package:silk_road/screens/navigation_screen.dart';
 import 'package:silk_road/translations/locale_keys.g.dart';
@@ -108,11 +109,15 @@ class _FormWidgetState extends State<FormStartWidget> {
                     for (int i = 0; i < data.dummy_data.length; i++) {
                       if (data.dummy_data[i]['email'] == enterdEmail &&
                           data.dummy_data[i]['password'] == enterdPass) {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => const NavigationScreen(),
-                          ),
-                        );
+                        User.role = data.dummy_data[i]['role'];
+                        User.name = data.dummy_data[i]['name'];
+                        User.email = data.dummy_data[i]['email'];
+                        User.password = data.dummy_data[i]['password'];
+                        User.imageFile = data.dummy_data[i]['image'];
+                        User.nameOnCard = data.dummy_data[i]['nameOnCard'];
+                        Navigator.of(context).pushNamedAndRemoveUntil(
+                            NavigationScreen.routName,
+                            (Route<dynamic> route) => false);
                         ScaffoldMessenger.of(context)
                           ..hideCurrentSnackBar()
                           ..showSnackBar(SnackBarWidget(

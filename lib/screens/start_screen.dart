@@ -10,6 +10,7 @@ import 'package:silk_road/widgets/start_screen/language_list_widget.dart';
 import '../translations/locale_keys.g.dart';
 
 class StartScreen extends StatefulWidget {
+  static const String routName = '/start-screen';
   const StartScreen({super.key});
 
   @override

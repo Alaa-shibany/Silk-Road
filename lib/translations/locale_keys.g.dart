@@ -62,4 +62,11 @@ abstract class LocaleKeys {
   static const fromlowtohigh = 'fromlowtohigh';
   static const all = 'all';
   static const alloffers = 'alloffers';
+  static const firstName = 'firstName';
+  static const lastName = 'last name';
+  static const logout = 'logout';
+  static const language = 'language';
+  static const card = 'card';
+  static const user = 'user';
+  static const deleteAccount = 'deleteAccount';
 }

@@ -58,6 +58,13 @@
     "fromhightolow" :"De haut en bas",
     "fromlowtohigh":"De bas en haut",
     "all":"Tout",
-    "alloffers":"Toutes les offres"
+    "alloffers":"Toutes les offres",
+    "firstName":"prénom",
+    "last name":"nom de famille",
+    "logout":"Se déconnecter",
+    "language":"langue",
+    "card":"carte",
+    "user":"utilisatrice",
+    "deleteAccount":"Supprimer le compte"
 
 }

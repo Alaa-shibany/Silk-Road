@@ -58,6 +58,13 @@
     "fromhightolow" :"От высокого до низкого",
     "fromlowtohigh":"От низкого к высокому",
     "all":"Все",
-    "alloffers":"Все предложения"
+    "alloffers":"Все предложения",
+    "firstName":"имя",
+    "last name":"фамилия",
+    "logout":"выйти",
+    "language":"язык",
+    "card":"карта",
+    "user":"пользователь",
+    "deleteAccount":"удалить аккаунт"
 
 }

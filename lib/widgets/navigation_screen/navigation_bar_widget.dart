@@ -29,21 +29,25 @@ class NavigationBarWidget extends StatelessWidget {
           padding: EdgeInsets.all(mediaQuery.height / 60),
           onTabChange: onTabChange,
           tabs: [
-            const GButton(
+            GButton(
               icon: Icons.home,
               text: 'Home',
+              textSize: MediaQuery.of(context).size.width / 25,
             ),
-            const GButton(
+            GButton(
               icon: Iconsax.map4,
               text: 'Map',
+              textSize: MediaQuery.of(context).size.width / 25,
             ),
             GButton(
               icon: Iconsax.category_25,
               text: LocaleKeys.sectors.tr(),
+              textSize: MediaQuery.of(context).size.width / 25,
             ),
-            const GButton(
+            GButton(
               icon: Icons.manage_accounts_outlined,
               text: 'Account',
+              textSize: MediaQuery.of(context).size.width / 25,
             ),
           ],
         ),

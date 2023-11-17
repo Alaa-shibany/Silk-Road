@@ -9,8 +9,14 @@ class data {
     {
       'role': 'admin',
       'id': 0,
+      'name': 'admin',
       'email': 'admin123@gmail.com',
-      'password': '12345678'
+      'password': '12345678',
+      'image': null,
+      'nameOnCard': '',
+      'numberOnCard': '',
+      'expiryDate': '',
+      'security': ''
     }
   ];
 

@@ -21,6 +21,8 @@ class _HomeScreenState extends State<HomeScreen>
   List offers = [];
   bool isLoading = false;
   List allShops = [];
+  late AnimationController controller;
+  late Animation<double> animation;
 
   Future<void> getData() async {
     setState(() {
@@ -66,9 +68,20 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   void initState() {
+    controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 1),
+    );
+    animation = Tween(begin: 0.0, end: 1.0).animate(controller);
     super.initState();
     getData();
     print(allShops);
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -128,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen>
                           LocaleKeys.offers.tr(),
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: mediaQuery.height / 50),
+                              fontSize: mediaQuery.width / 25),
                         ),
                         TextButton(
                             onPressed: () {
@@ -139,7 +152,11 @@ class _HomeScreenState extends State<HomeScreen>
                             },
                             child: Text(
                               LocaleKeys.viewall.tr(),
-                              style: const TextStyle(color: Colors.blueAccent),
+                              style: TextStyle(
+                                color: Colors.blueAccent,
+                                fontSize:
+                                    MediaQuery.of(context).size.width / 25,
+                              ),
                             ))
                       ],
                     ),

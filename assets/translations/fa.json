@@ -58,5 +58,12 @@
     "fromhightolow" :"از بالا به پایین",
     "fromlowtohigh":"از پایین به بالا",
     "all":"همه",
-    "alloffers":"همه پیشنهادات"
+    "alloffers":"همه پیشنهادات",
+    "firstName":"نام کوچک",
+    "last name":"نام خانوادگی",
+    "logout":"خروج",
+    "language":"زبان",
+    "card":"کارت",
+    "user":"کاربر",
+    "deleteAccount":"حذف حساب کاربری"
 }

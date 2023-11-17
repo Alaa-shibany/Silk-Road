@@ -19,7 +19,7 @@ class _AuthScreenState extends State<AuthScreen> {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: const Color.fromARGB(0, 219, 215, 215),
       ),
       body: Stack(
         children: [

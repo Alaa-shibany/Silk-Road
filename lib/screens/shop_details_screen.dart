@@ -1,7 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:like_button/like_button.dart';
 import 'package:silk_road/translations/locale_keys.g.dart';
 import 'package:silk_road/widgets/shop_details_screen/details_widget.dart';
 import 'package:silk_road/widgets/shop_details_screen/hero_image_widget.dart';

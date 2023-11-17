@@ -131,7 +131,7 @@ class CircleImagePicker extends StatelessWidget {
             : Icon(
                 Icons.person,
                 color: Colors.white,
-                size: mediaQuery.height / 15,
+                size: mediaQuery.width / 10,
               ),
       ),
     );

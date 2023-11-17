@@ -18,44 +18,51 @@ class SectorWidget extends StatelessWidget {
   final String badgeLabel;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Container(
-          padding: padding,
-          margin: margin,
-          height: mediaQuery.height / 12,
-          width: mediaQuery.width / 7,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            shape: BoxShape.circle,
-            border: Border.all(color: AppColors.sinkColor, width: 2),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.5),
-                spreadRadius: 1,
-                blurRadius: 5,
-                offset: const Offset(0, 1), // changes position of shadow
-              ),
-            ],
-          ),
-          child: Badge(
-            label: Text(
-              badgeLabel,
-              style: TextStyle(
-                  color: AppColors.darkPurpulColor,
-                  fontWeight: FontWeight.bold),
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            padding: padding,
+            margin: margin,
+            height: mediaQuery.height / 12,
+            width: mediaQuery.width / 7,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              shape: BoxShape.circle,
+              border: Border.all(color: AppColors.sinkColor, width: 2),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.5),
+                  spreadRadius: 1,
+                  blurRadius: 5,
+                  offset: const Offset(0, 1), // changes position of shadow
+                ),
+              ],
             ),
-            backgroundColor: Colors.amberAccent,
-            child: icon,
+            child: Badge(
+              label: Text(
+                badgeLabel,
+                style: TextStyle(
+                    color: AppColors.darkPurpulColor,
+                    fontSize: MediaQuery.of(context).size.width / 40,
+                    fontWeight: FontWeight.bold),
+              ),
+              backgroundColor: Colors.amberAccent,
+              child: icon,
+            ),
           ),
-        ),
-        Text(
-          title,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        )
-      ],
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: MediaQuery.of(context).size.width / 35,
+            ),
+          )
+        ],
+      ),
     );
   }
 }

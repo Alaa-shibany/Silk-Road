@@ -21,12 +21,7 @@ class _OfferWidgetState extends State<OfferWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        // Navigator.of(context).push(MaterialPageRoute(
-        //   builder: (context) => ShopDetailsScreen(
-        //       shopDetails: widget.offers[widget.index]['shop']),
-        // ));
-      },
+      onTap: () {},
       child: Container(
         width: widget.mediaQuery.width / 2.5,
         height: widget.mediaQuery.height / 5,
@@ -43,36 +38,44 @@ class _OfferWidgetState extends State<OfferWidget> {
         ),
         child: Stack(
           children: [
-            Column(
-              children: [
-                Hero(
-                  tag:
-                      '${widget.offers['shop']['id']}-${widget.offers['shop']['name']}',
-                  child: Image.asset(
-                    widget.offers['shop']['image'],
-                    fit: BoxFit.cover,
-                    height: widget.mediaQuery.height / 8,
-                    width: double.infinity,
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Hero(
+                    tag:
+                        '${widget.offers['shop']['id']}-${widget.offers['shop']['name']}',
+                    child: Image.asset(
+                      widget.offers['shop']['image'],
+                      fit: BoxFit.cover,
+                      height: widget.mediaQuery.height / 8,
+                      width: double.infinity,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: widget.mediaQuery.height / 100,
-                ),
-                Text(
-                  widget.offers['shop']['name'],
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(
-                      horizontal: widget.mediaQuery.width / 40),
-                  child: Text(
-                    widget.offers['shop']['offer']['offer'],
+                  SizedBox(
+                    height: widget.mediaQuery.height / 100,
+                  ),
+                  Text(
+                    widget.offers['shop']['name'],
                     maxLines: 2,
-                    textAlign: TextAlign.center,
                     overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: MediaQuery.of(context).size.width / 30),
                   ),
-                )
-              ],
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: widget.mediaQuery.width / 40),
+                    child: Text(
+                      widget.offers['shop']['offer']['offer'],
+                      maxLines: 2,
+                      textAlign: TextAlign.center,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width / 30),
+                    ),
+                  )
+                ],
+              ),
             ),
             Padding(
               padding: EdgeInsets.symmetric(
@@ -82,6 +85,7 @@ class _OfferWidgetState extends State<OfferWidget> {
                 children: [
                   Icon(
                     Iconsax.heart5,
+                    size: MediaQuery.of(context).size.width / 15,
                     shadows: const <Shadow>[
                       Shadow(color: Colors.black26, blurRadius: 15.0)
                     ],
@@ -89,9 +93,10 @@ class _OfferWidgetState extends State<OfferWidget> {
                   ),
                   Text(
                     widget.offers['shop']['offer']['likes'].toString(),
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      shadows: [
+                      fontSize: MediaQuery.of(context).size.width / 25,
+                      shadows: const [
                         Shadow(
                           blurRadius: 0.0, // Spread of the shadow
                           color: Colors.white, // Shadow color
