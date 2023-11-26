@@ -1,7 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:silk_road/data/dummy_data.dart';
+import 'package:silk_road/models/user.dart';
 import 'package:silk_road/screens/all_offers_screen.dart';
+import 'package:silk_road/styles/app_colors.dart';
 import 'package:silk_road/translations/locale_keys.g.dart';
 import 'package:silk_road/widgets/home_screen/best_sectors_widget.dart';
 import 'package:silk_road/widgets/home_screen/all_offers_widget.dart';
@@ -11,14 +13,13 @@ import '../common/BackgroundPaint.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
-
+  static List offers = [];
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
-  List offers = [];
   bool isLoading = false;
   List allShops = [];
   late AnimationController controller;
@@ -33,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen>
         for (int k = 0;
             k < data.sectorsList[i]['shops'][j]['offers'].length;
             k++) {
-          offers.add(
+          HomeScreen.offers.add(
             {
               "id": data.sectorsList[i]['id'],
               "name": data.sectorsList[i]['name'],
@@ -102,11 +103,56 @@ class _HomeScreenState extends State<HomeScreen>
                       .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automaticallypainter: AppBarCustom(),
               painter: AppBarCustom()),
           Padding(
-            padding: EdgeInsets.only(top: mediaQuery.height / 6),
+            padding: EdgeInsets.symmetric(
+                vertical: mediaQuery.height / 50,
+                horizontal: mediaQuery.width / 100),
+            child: ListTile(
+              leading: Container(
+                padding: EdgeInsets.symmetric(
+                    horizontal: mediaQuery.width / 100,
+                    vertical: mediaQuery.height / 300),
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.white,
+                    ),
+                  ],
+                ),
+                child: CircleAvatar(
+                    backgroundImage: User.imageFile == null
+                        ? null
+                        : FileImage(User.imageFile!),
+                    radius: mediaQuery.width / 18,
+                    child: User.imageFile == null
+                        ? const Icon(
+                            Icons.person,
+                            color: Colors.white,
+                          )
+                        : const SizedBox(
+                            width: 0,
+                          )),
+              ),
+              title: Text(
+                User.name,
+                style: TextStyle(
+                    color: Colors.black54,
+                    fontWeight: FontWeight.bold,
+                    fontSize: mediaQuery.width / 25),
+              ),
+              subtitle: Text(
+                User.role,
+                style: TextStyle(
+                    color: Colors.black54, fontSize: mediaQuery.width / 30),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: mediaQuery.height / 6.9),
             child: ImageSliderWidget(mediaQuery: mediaQuery),
           ),
           Padding(
-            padding: EdgeInsets.only(top: mediaQuery.height / 2.5),
+            padding: EdgeInsets.only(top: mediaQuery.height / 2.8),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -147,7 +193,7 @@ class _HomeScreenState extends State<HomeScreen>
                             onPressed: () {
                               Navigator.of(context).push(MaterialPageRoute(
                                 builder: (context) =>
-                                    AllOffersScreen(offers: offers),
+                                    AllOffersScreen(offers: HomeScreen.offers),
                               ));
                             },
                             child: Text(
@@ -169,7 +215,7 @@ class _HomeScreenState extends State<HomeScreen>
                         physics: const NeverScrollableScrollPhysics(),
                         length: 6,
                         mediaQuery: mediaQuery,
-                        offers: offers),
+                        offers: HomeScreen.offers),
                   ),
                 ],
               ),

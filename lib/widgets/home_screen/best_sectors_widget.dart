@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:silk_road/data/dummy_data.dart';
+import 'package:silk_road/screens/shops_screen.dart';
 import 'package:silk_road/widgets/home_screen/sector_widget.dart';
 
 class BestSectorsWidget extends StatelessWidget {
@@ -12,13 +13,20 @@ class BestSectorsWidget extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: mediaQuery.width / 20),
       scrollDirection: Axis.horizontal,
       itemCount: 4,
-      itemBuilder: (context, index) => SectorWidget(
-          badgeLabel: data.sectorsList[index]['shops'].length.toString(),
-          padding: EdgeInsets.all(mediaQuery.height / 150),
-          margin: EdgeInsets.symmetric(horizontal: mediaQuery.width / 25),
-          mediaQuery: mediaQuery,
-          icon: Image.asset(data.sectorsList[index]['image']),
-          title: data.sectorsList[index]['name']),
+      itemBuilder: (context, index) => GestureDetector(
+        onTap: () => Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => ShopsScreen(
+            shopsId: data.sectorsList[index]['id'],
+          ),
+        )),
+        child: SectorWidget(
+            badgeLabel: data.sectorsList[index]['shops'].length.toString(),
+            padding: EdgeInsets.all(mediaQuery.height / 150),
+            margin: EdgeInsets.symmetric(horizontal: mediaQuery.width / 25),
+            mediaQuery: mediaQuery,
+            icon: Image.asset(data.sectorsList[index]['image']),
+            title: data.sectorsList[index]['name']),
+      ),
     );
   }
 }

@@ -45,6 +45,11 @@ class NavigationBarWidget extends StatelessWidget {
               textSize: MediaQuery.of(context).size.width / 25,
             ),
             GButton(
+              icon: Icons.sell_outlined,
+              text: LocaleKeys.offers.tr(),
+              textSize: MediaQuery.of(context).size.width / 25,
+            ),
+            GButton(
               icon: Icons.manage_accounts_outlined,
               text: 'Account',
               textSize: MediaQuery.of(context).size.width / 25,

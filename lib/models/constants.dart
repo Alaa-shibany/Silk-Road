@@ -1,4 +1,5 @@
 import 'package:silk_road/screens/account_screen.dart';
+import 'package:silk_road/screens/all_offers_screen.dart';
 import 'package:silk_road/screens/map_screen.dart';
 
 import '../screens/home_screen.dart';
@@ -12,6 +13,7 @@ class Constants {
     const HomeScreen(),
     const MapSample(),
     const SectorsScreen(),
+    AllOffersScreen(offers: HomeScreen.offers),
     const AccountScreen(),
   ];
 }
