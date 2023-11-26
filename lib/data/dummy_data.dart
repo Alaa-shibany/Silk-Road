@@ -331,55 +331,7 @@ class data {
       'id': 3,
       'name': LocaleKeys.health.tr(),
       'image': 'assets/images/beauty.png',
-      'shops': [
-        {
-          "id": 15,
-          "name": "Cityville Spa & Wellness",
-          "image": 'assets/images/beauty.png',
-          "location": "123 Main St, Cityville",
-          "subtitle": "Make tako and showerma",
-          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "rate": 5.0,
-          "description":
-              "Cityville Spa & Wellness offers a range of rejuvenating treatments, including massages, facials, and body scrubs. Our skilled therapists and tranquil atmosphere ensure a relaxing experience, promoting both health and beauty.",
-          "status": LocaleKeys.open.tr(),
-          "offers": [
-            {"likes": 200, "offer": "Complimentary Aromatherapy Upgrade"},
-            {"likes": 350, "offer": "Weekend Couples Massage Package"}
-          ]
-        },
-        {
-          "id": 16,
-          "name": "Glow Beauty Salon",
-          "image": 'assets/images/beauty.png',
-          "location": "456 Elm St, Townsville",
-          "subtitle": "Make tako and showerma",
-          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "rate": 5.0,
-          "description":
-              "Glow Beauty Salon offers a range of beauty services, including haircuts, styling, and manicures. Our skilled stylists and beauticians stay updated with the latest trends to enhance your natural beauty.",
-          "status": LocaleKeys.open.tr(),
-          "offers": [
-            {"likes": 180, "offer": "Free Hair Treatment with Haircut"},
-            {"likes": 250, "offer": "Bridal Makeup Package"}
-          ]
-        },
-        {
-          "id": 17,
-          "name": "Villageland Fitness Center",
-          "image": 'assets/images/beauty.png',
-          "location": "789 Oak St, Villageland",
-          "subtitle": "Make tako and showerma",
-          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          "rate": 5.0,
-          "description":
-              "Villageland Fitness Center offers state-of-the-art equipment, fitness classes, and personalized training programs. Our certified trainers are dedicated to helping you achieve your fitness and wellness goals.",
-          "offers": [
-            {"likes": 300, "offer": "Free Trial Yoga Class"},
-            {"likes": 220, "offer": "Discounted Personal Training Package"}
-          ]
-        }
-      ]
+      'shops': []
     },
     {
       'id': 4,

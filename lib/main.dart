@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-// import 'package:silk_road/screens/auth_screen.dart';
 import 'package:silk_road/screens/navigation_screen.dart';
 import 'package:silk_road/screens/start_screen.dart';
 
