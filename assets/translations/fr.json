@@ -65,6 +65,6 @@
     "language":"langue",
     "card":"carte",
     "user":"utilisatrice",
-    "deleteAccount":"Supprimer le compte"
-
+    "deleteAccount":"Supprimer le compte",
+    "current balance" : "Solde actuel"
 }

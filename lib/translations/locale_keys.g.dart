@@ -69,4 +69,5 @@ abstract class LocaleKeys {
   static const card = 'card';
   static const user = 'user';
   static const deleteAccount = 'deleteAccount';
+  static const currentBalance = 'current balance';
 }

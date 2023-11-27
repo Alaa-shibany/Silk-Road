@@ -65,5 +65,6 @@
     "language":"اللغة",
     "user":"المستخدم",
     "deleteAccount":"حذف الحساب",
-    "card":"البطاقة"
+    "card":"البطاقة",
+    "current balance" : "الرصيد الحالي"
 }

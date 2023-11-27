@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:silk_road/data/dummy_data.dart';
 import 'package:silk_road/models/user.dart';
 import 'package:silk_road/screens/all_offers_screen.dart';
-import 'package:silk_road/styles/app_colors.dart';
 import 'package:silk_road/translations/locale_keys.g.dart';
 import 'package:silk_road/widgets/home_screen/best_sectors_widget.dart';
 import 'package:silk_road/widgets/home_screen/all_offers_widget.dart';

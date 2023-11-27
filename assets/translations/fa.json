@@ -65,5 +65,6 @@
     "language":"زبان",
     "card":"کارت",
     "user":"کاربر",
-    "deleteAccount":"حذف حساب کاربری"
+    "deleteAccount":"حذف حساب کاربری",
+    "current balance" : "موجودی فعلی"
 }

@@ -65,5 +65,6 @@
     "language":"language",
     "card":"card",
     "user":"user",
-    "deleteAccount":"delete account"
+    "deleteAccount":"delete account",
+    "current balance" : "Current balance"
 }

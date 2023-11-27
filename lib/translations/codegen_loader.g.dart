@@ -81,7 +81,8 @@ class CodegenLoader extends AssetLoader {
     "language": "اللغة",
     "user": "المستخدم",
     "deleteAccount": "حذف الحساب",
-    "card": "البطاقة"
+    "card": "البطاقة",
+    "current balance": "الرصيد الحالي"
   };
   static const Map<String, dynamic> fa = {
     "languagesellect": "زبان مورد نظر خود را انتخاب کنید",
@@ -150,7 +151,8 @@ class CodegenLoader extends AssetLoader {
     "language": "زبان",
     "card": "کارت",
     "user": "کاربر",
-    "deleteAccount": "حذف حساب کاربری"
+    "deleteAccount": "حذف حساب کاربری",
+    "current balance": "موجودی فعلی"
   };
   static const Map<String, dynamic> ru = {
     "languagesellect": "Выберите язык, который вы хотите",
@@ -218,7 +220,8 @@ class CodegenLoader extends AssetLoader {
     "language": "язык",
     "card": "карта",
     "user": "пользователь",
-    "deleteAccount": "удалить аккаунт"
+    "deleteAccount": "удалить аккаунт",
+    "current balance": "текущий баланс"
   };
   static const Map<String, dynamic> fr = {
     "languagesellect": "Choisissez la langue que vous voulez",
@@ -287,7 +290,8 @@ class CodegenLoader extends AssetLoader {
     "language": "langue",
     "card": "carte",
     "user": "utilisatrice",
-    "deleteAccount": "Supprimer le compte"
+    "deleteAccount": "Supprimer le compte",
+    "current balance": "Solde actuel"
   };
   static const Map<String, dynamic> en = {
     "languagesellect": "Sellect your language",
@@ -356,7 +360,8 @@ class CodegenLoader extends AssetLoader {
     "language": "language",
     "card": "card",
     "user": "user",
-    "deleteAccount": "delete account"
+    "deleteAccount": "delete account",
+    "current balance": "Current balance"
   };
 
   static const Map<String, Map<String, dynamic>> mapLocales = {

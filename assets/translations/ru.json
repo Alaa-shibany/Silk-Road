@@ -65,6 +65,6 @@
     "language":"язык",
     "card":"карта",
     "user":"пользователь",
-    "deleteAccount":"удалить аккаунт"
-
+    "deleteAccount":"удалить аккаунт",
+    "current balance" : "текущий баланс"
 }
