@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:silk_road/screens/shop_details_screen.dart';
 
 import '../../styles/app_colors.dart';
 
@@ -21,7 +22,12 @@ class _OfferWidgetState extends State<OfferWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) =>
+              ShopDetailsScreen(id: widget.offers['shop']['id']),
+        ));
+      },
       child: Container(
         width: widget.mediaQuery.width / 2.5,
         height: widget.mediaQuery.height / 5,

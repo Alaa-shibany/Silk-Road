@@ -7,6 +7,7 @@ class User {
   static String password = '';
   static File? imageFile;
   static String nameOnCard = '';
+  static String balance = '';
 
   void getUserData() {
     print('role = $role');

@@ -152,7 +152,7 @@ class AccountBodyContent extends StatelessWidget {
                       size: mediaQuery.width / 20,
                     )),
                 Text(
-                  User.email,
+                  '${User.balance} \$',
                   style: TextStyle(
                     color: Colors.black45,
                     fontSize: MediaQuery.of(context).size.width / 25,

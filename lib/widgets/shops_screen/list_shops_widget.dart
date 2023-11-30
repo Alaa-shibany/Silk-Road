@@ -22,7 +22,7 @@ class ShopListWidget extends StatelessWidget {
               : () => Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => ShopDetailsScreen(
-                        shopDetails: filteredDataList[index],
+                        id: filteredDataList[index]['id'],
                       ),
                     ),
                   ),

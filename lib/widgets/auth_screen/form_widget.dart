@@ -115,6 +115,7 @@ class _FormWidgetState extends State<FormStartWidget> {
                         User.password = data.dummy_data[i]['password'];
                         User.imageFile = data.dummy_data[i]['image'];
                         User.nameOnCard = data.dummy_data[i]['nameOnCard'];
+                        User.balance = data.dummy_data[i]['balance'].toString();
                         Navigator.of(context).pushNamedAndRemoveUntil(
                             NavigationScreen.routName,
                             (Route<dynamic> route) => false);

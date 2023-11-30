@@ -16,7 +16,8 @@ class data {
       'nameOnCard': '',
       'numberOnCard': '',
       'expiryDate': '',
-      'security': ''
+      'security': '',
+      'balance': 1000,
     }
   ];
 
