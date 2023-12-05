@@ -519,7 +519,7 @@ class _FormCreatAccountWidgetState extends State<FormCreatAccountWidget> {
                     if (_formKey.currentState!.validate()) {
                       data.dummy_data.add(
                         {
-                          'role': 'Tourist',
+                          'role': LocaleKeys.tourist.tr(),
                           'name': '$firstName $lastName',
                           'id': data.dummy_data.last['id'] + 1,
                           'email': email,

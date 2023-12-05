@@ -66,5 +66,8 @@
     "card":"карта",
     "user":"пользователь",
     "deleteAccount":"удалить аккаунт",
-    "current balance" : "текущий баланс"
+    "current balance" : "текущий баланс",
+    "tourist" : "турист",
+    "admin":"администратор",
+    "store":"магазин"
 }

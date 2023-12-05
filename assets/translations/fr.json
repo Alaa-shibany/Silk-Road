@@ -66,5 +66,8 @@
     "card":"carte",
     "user":"utilisatrice",
     "deleteAccount":"Supprimer le compte",
-    "current balance" : "Solde actuel"
+    "current balance" : "Solde actuel",
+    "tourist" : "touristique",
+    "admin":"administratrice",
+    "store":"magasin"
 }

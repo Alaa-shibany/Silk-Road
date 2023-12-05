@@ -82,7 +82,10 @@ class CodegenLoader extends AssetLoader {
     "user": "المستخدم",
     "deleteAccount": "حذف الحساب",
     "card": "البطاقة",
-    "current balance": "الرصيد الحالي"
+    "current balance": "الرصيد الحالي",
+    "tourist": "سائح",
+    "admin": "مدير النظام",
+    "store": "متجر"
   };
   static const Map<String, dynamic> fa = {
     "languagesellect": "زبان مورد نظر خود را انتخاب کنید",
@@ -152,7 +155,10 @@ class CodegenLoader extends AssetLoader {
     "card": "کارت",
     "user": "کاربر",
     "deleteAccount": "حذف حساب کاربری",
-    "current balance": "موجودی فعلی"
+    "current balance": "موجودی فعلی",
+    "tourist": "توریست",
+    "admin": "مدیر",
+    "store": "فروشگاه"
   };
   static const Map<String, dynamic> ru = {
     "languagesellect": "Выберите язык, который вы хотите",
@@ -221,7 +227,10 @@ class CodegenLoader extends AssetLoader {
     "card": "карта",
     "user": "пользователь",
     "deleteAccount": "удалить аккаунт",
-    "current balance": "текущий баланс"
+    "current balance": "текущий баланс",
+    "tourist": "турист",
+    "admin": "администратор",
+    "store": "магазин"
   };
   static const Map<String, dynamic> fr = {
     "languagesellect": "Choisissez la langue que vous voulez",
@@ -291,7 +300,10 @@ class CodegenLoader extends AssetLoader {
     "card": "carte",
     "user": "utilisatrice",
     "deleteAccount": "Supprimer le compte",
-    "current balance": "Solde actuel"
+    "current balance": "Solde actuel",
+    "tourist": "touristique",
+    "admin": "administratrice",
+    "store": "magasin"
   };
   static const Map<String, dynamic> en = {
     "languagesellect": "Sellect your language",
@@ -361,7 +373,10 @@ class CodegenLoader extends AssetLoader {
     "card": "card",
     "user": "user",
     "deleteAccount": "delete account",
-    "current balance": "Current balance"
+    "current balance": "Current balance",
+    "tourist": "tourist",
+    "admin": "admin",
+    "store": "store"
   };
 
   static const Map<String, Map<String, dynamic>> mapLocales = {

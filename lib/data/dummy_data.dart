@@ -1,5 +1,6 @@
 // ignore: camel_case_types
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
 import 'package:silk_road/translations/locale_keys.g.dart';
 
 // ignore: camel_case_types
@@ -7,7 +8,7 @@ class data {
   // ignore: non_constant_identifier_names
   static List dummy_data = [
     {
-      'role': 'admin',
+      'role': LocaleKeys.admin.tr(),
       'id': 0,
       'name': 'admin',
       'email': 'admin123@gmail.com',
@@ -18,7 +19,137 @@ class data {
       'expiryDate': '',
       'security': '',
       'balance': 1000,
-    }
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 1,
+      'name': 'User1',
+      'email': 'User1@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user1',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 2,
+      'name': 'User2',
+      'email': 'User2@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user2',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 3,
+      'name': 'User3',
+      'email': 'User3@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user3',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 4,
+      'name': 'User4',
+      'email': 'User4@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user4',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 5,
+      'name': 'User5',
+      'email': 'User5@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user5',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 6,
+      'name': 'User6',
+      'email': 'User6@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user6',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 7,
+      'name': 'User7',
+      'email': 'User7@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user7',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 8,
+      'name': 'User8',
+      'email': 'User8@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user8',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 9,
+      'name': 'User9',
+      'email': 'User9@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user9',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
+    {
+      'role': LocaleKeys.tourist.tr(),
+      'id': 10,
+      'name': 'User10',
+      'email': 'User10@gmail.com',
+      'password': '11111111',
+      'image': null,
+      'nameOnCard': 'user10',
+      'numberOnCard': '1111 1111 1111 1111',
+      'expiryDate': '11/11',
+      'security': '123',
+      'balance': 1000,
+    },
   ];
 
   static List sectorsList = [
@@ -407,4 +538,18 @@ class data {
       'shops': [],
     },
   ];
+}
+
+class Data extends StatefulWidget {
+  const Data({super.key});
+
+  @override
+  State<Data> createState() => _DataState();
+}
+
+class _DataState extends State<Data> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
 }

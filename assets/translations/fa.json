@@ -66,5 +66,8 @@
     "card":"کارت",
     "user":"کاربر",
     "deleteAccount":"حذف حساب کاربری",
-    "current balance" : "موجودی فعلی"
+    "current balance" : "موجودی فعلی",
+    "tourist" : "توریست",
+    "admin":"مدیر",
+    "store":"فروشگاه"
 }

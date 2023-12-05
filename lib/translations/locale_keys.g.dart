@@ -70,4 +70,7 @@ abstract class LocaleKeys {
   static const user = 'user';
   static const deleteAccount = 'deleteAccount';
   static const currentBalance = 'current balance';
+  static const tourist = 'tourist';
+  static const admin = 'admin';
+  static const store = 'store';
 }

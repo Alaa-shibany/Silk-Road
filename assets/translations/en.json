@@ -66,5 +66,8 @@
     "card":"card",
     "user":"user",
     "deleteAccount":"delete account",
-    "current balance" : "Current balance"
+    "current balance" : "Current balance",
+    "tourist" : "tourist",
+    "admin":"admin",
+    "store":"store"
 }

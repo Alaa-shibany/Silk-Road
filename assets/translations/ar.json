@@ -66,5 +66,8 @@
     "user":"المستخدم",
     "deleteAccount":"حذف الحساب",
     "card":"البطاقة",
-    "current balance" : "الرصيد الحالي"
+    "current balance" : "الرصيد الحالي",
+    "tourist" : "سائح",
+    "admin":"مدير النظام",
+    "store":"متجر"
 }
