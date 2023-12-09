@@ -136,16 +136,16 @@ class _ShopDetailsScreenState extends State<ShopDetailsScreen> {
                             SizedBox(
                               height: mediaQuery.height / 50,
                             ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: mediaQuery.width / 22),
-                              child: Text(
-                                LocaleKeys.offers.tr(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: mediaQuery.height / 50),
-                              ),
-                            ),
+                            // Padding(
+                            //   padding: EdgeInsets.symmetric(
+                            //       horizontal: mediaQuery.width / 22),
+                            //   child: Text(
+                            //     LocaleKeys.offers.tr(),
+                            //     style: TextStyle(
+                            //         fontWeight: FontWeight.bold,
+                            //         fontSize: mediaQuery.height / 50),
+                            //   ),
+                            // ),
                             ListView.builder(
                               shrinkWrap: true,
                               padding: EdgeInsets.only(

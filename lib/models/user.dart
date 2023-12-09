@@ -10,7 +10,7 @@ class User {
   static String balance = '';
 
   void getUserData() {
-    print('role = $role');
+    print('role = ${role}');
     print('name = $name');
     print('email = $email');
     print('password = $password');

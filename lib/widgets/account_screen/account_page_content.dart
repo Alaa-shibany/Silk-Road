@@ -236,7 +236,7 @@ class AccountBodyContent extends StatelessWidget {
                 mediaQuery: mediaQuery,
                 onTap: () {
                   Navigator.of(context).pushNamedAndRemoveUntil(
-                      StartScreen.routName, (Route<dynamic> route) => true);
+                      StartScreen.routName, (Route<dynamic> route) => false);
                 },
                 title: LocaleKeys.logout.tr(),
                 icon: Icon(

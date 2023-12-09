@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:silk_road/data/dummy_data.dart';
 import 'package:silk_road/models/user.dart';
+import 'package:silk_road/screens/start_screen.dart';
 import 'package:silk_road/translations/locale_keys.g.dart';
 import 'package:silk_road/widgets/account_screen/account_page_content.dart';
 
@@ -31,10 +32,17 @@ class _AccountScreenState extends State<AccountScreen> {
                 : context.locale.toString() == 'fr'
                     ? 'Français'
                     : 'Русский';
-    return User.role == LocaleKeys.admin.tr()
+    return User.role == 'admin'
         ? Scaffold(
             appBar: AppBar(
               backgroundColor: const Color.fromARGB(255, 255, 230, 156),
+              leading: IconButton(
+                icon: const Icon(Icons.logout),
+                onPressed: () {
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                      StartScreen.routName, (Route<dynamic> route) => false);
+                },
+              ),
               actions: [
                 Padding(
                   padding:
@@ -52,6 +60,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         onChanged: (String? newValue) {
                           setState(() {
                             selectedLanguage = newValue!;
+                            data.dummy_data = data.dummy_data;
                           });
                         },
                         items: <String>[
@@ -79,6 +88,7 @@ class _AccountScreenState extends State<AccountScreen> {
                                                       const Locale('fr'))
                                                   : context.setLocale(
                                                       const Locale('en'));
+                                  data().resetSectors();
                                 });
                               });
                         }).toList(),
@@ -100,13 +110,15 @@ class _AccountScreenState extends State<AccountScreen> {
               padding: EdgeInsets.zero,
               itemCount: data.dummy_data
                   .where(
-                      (element) => element['role'] == LocaleKeys.tourist.tr())
+                    (element) => element['role'] == 'tourist',
+                  )
                   .toList()
                   .length,
               itemBuilder: (context, index) {
                 Map<String, dynamic> account = data.dummy_data
                     .where(
-                        (element) => element['role'] == LocaleKeys.tourist.tr())
+                      (element) => element['role'] == 'tourist',
+                    )
                     .toList()[index];
                 return Container(
                   margin: EdgeInsets.symmetric(
@@ -265,6 +277,7 @@ class _AccountScreenState extends State<AccountScreen> {
                                                   .setLocale(const Locale('fr'))
                                               : context.setLocale(
                                                   const Locale('en'));
+                              data().resetSectors();
                             });
                             // ignore: use_build_context_synchronously
                           });

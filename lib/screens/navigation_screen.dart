@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:silk_road/data/dummy_data.dart';
 import 'package:silk_road/models/constants.dart';
 import 'package:silk_road/models/user.dart';
 import 'package:silk_road/widgets/navigation_screen/navigation_bar_widget.dart';
@@ -27,6 +28,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
         onTabChange: (value) {
           setState(() {
             Constants.index = value;
+            data().resetSectors();
           });
         },
       ),

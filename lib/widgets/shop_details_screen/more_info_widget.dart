@@ -14,9 +14,10 @@ class MoreInfoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-          left: mediaQuery.width / 40,
-          right: mediaQuery.width / 40,
-          top: mediaQuery.width / 20),
+        left: mediaQuery.width / 200,
+        right: mediaQuery.width / 200,
+        top: mediaQuery.height / 100,
+      ),
       width: double.infinity,
       // height: mediaQuery.height / 3,
       decoration: BoxDecoration(
@@ -50,7 +51,6 @@ class MoreInfoWidget extends StatelessWidget {
               horizontal: mediaQuery.width / 20,
             ),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                     child: Row(
@@ -87,7 +87,7 @@ class MoreInfoWidget extends StatelessWidget {
                         width: mediaQuery.width / 30,
                       ),
                       const Icon(
-                        Iconsax.timer5,
+                        Iconsax.clock,
                         color: Colors.blueAccent,
                       ),
                     ],

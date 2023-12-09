@@ -109,6 +109,13 @@ class _FormWidgetState extends State<FormStartWidget> {
                     for (int i = 0; i < data.dummy_data.length; i++) {
                       if (data.dummy_data[i]['email'] == enterdEmail &&
                           data.dummy_data[i]['password'] == enterdPass) {
+                        ScaffoldMessenger.of(context)
+                          ..hideCurrentSnackBar()
+                          ..showSnackBar(SnackBarWidget(
+                                  title: LocaleKeys.success.tr(),
+                                  message: LocaleKeys.welcom.tr(),
+                                  contentType: ContentType.success)
+                              .getSnakBar());
                         User.role = data.dummy_data[i]['role'];
                         User.name = data.dummy_data[i]['name'];
                         User.email = data.dummy_data[i]['email'];
@@ -119,23 +126,16 @@ class _FormWidgetState extends State<FormStartWidget> {
                         Navigator.of(context).pushNamedAndRemoveUntil(
                             NavigationScreen.routName,
                             (Route<dynamic> route) => false);
-                        ScaffoldMessenger.of(context)
-                          ..hideCurrentSnackBar()
-                          ..showSnackBar(SnackBarWidget(
-                                  title: LocaleKeys.success.tr(),
-                                  message: LocaleKeys.welcom.tr(),
-                                  contentType: ContentType.success)
-                              .getSnakBar());
-                      } else {
-                        ScaffoldMessenger.of(context)
-                          ..hideCurrentSnackBar()
-                          ..showSnackBar(SnackBarWidget(
-                                  title: LocaleKeys.sorry.tr(),
-                                  message: LocaleKeys.passoremail.tr(),
-                                  contentType: ContentType.failure)
-                              .getSnakBar());
+                        return;
                       }
                     }
+                    ScaffoldMessenger.of(context)
+                      ..hideCurrentSnackBar()
+                      ..showSnackBar(SnackBarWidget(
+                              title: LocaleKeys.sorry.tr(),
+                              message: LocaleKeys.passoremail.tr(),
+                              contentType: ContentType.failure)
+                          .getSnakBar());
                   }
                 },
                 style: ElevatedButton.styleFrom(
