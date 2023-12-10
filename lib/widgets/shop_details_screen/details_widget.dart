@@ -53,8 +53,8 @@ class DetailsWidget extends StatelessWidget {
             style: TextStyle(fontSize: mediaQuery.height / 50),
           ),
           RatingBar.builder(
+            ignoreGestures: true,
             initialRating: shopDetails['rate'],
-            minRating: 5,
             itemBuilder: (context, index) => const Icon(
               Icons.star_rate_rounded,
               color: Colors.amberAccent,

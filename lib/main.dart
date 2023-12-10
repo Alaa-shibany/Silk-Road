@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/services.dart';
 import 'package:silk_road/screens/navigation_screen.dart';
 import 'package:silk_road/screens/start_screen.dart';
 
@@ -8,7 +9,9 @@ import 'package:silk_road/translations/codegen_loader.g.dart';
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
-
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   runApp(
     EasyLocalization(
       path: 'assets/translations/',

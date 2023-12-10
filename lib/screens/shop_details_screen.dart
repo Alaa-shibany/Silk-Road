@@ -61,9 +61,15 @@ class _ShopDetailsScreenState extends State<ShopDetailsScreen> {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.height / 40,
+            ),
             Text(
-              userRate.toString(),
+              LocaleKeys.RateTheStore.tr(),
               style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height / 90,
             ),
             RatingBar.builder(
               initialRating: userRate,
@@ -136,16 +142,6 @@ class _ShopDetailsScreenState extends State<ShopDetailsScreen> {
                             SizedBox(
                               height: mediaQuery.height / 50,
                             ),
-                            // Padding(
-                            //   padding: EdgeInsets.symmetric(
-                            //       horizontal: mediaQuery.width / 22),
-                            //   child: Text(
-                            //     LocaleKeys.offers.tr(),
-                            //     style: TextStyle(
-                            //         fontWeight: FontWeight.bold,
-                            //         fontSize: mediaQuery.height / 50),
-                            //   ),
-                            // ),
                             ListView.builder(
                               shrinkWrap: true,
                               padding: EdgeInsets.only(
