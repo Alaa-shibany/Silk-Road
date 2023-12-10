@@ -73,4 +73,8 @@ abstract class LocaleKeys {
   static const tourist = 'tourist';
   static const admin = 'admin';
   static const store = 'store';
+  static const RateTheStore = "RateTheStore'sServices";
+  static const home = 'home';
+  static const map = 'map';
+  static const account = 'account';
 }

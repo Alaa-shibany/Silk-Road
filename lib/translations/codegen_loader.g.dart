@@ -85,7 +85,11 @@ class CodegenLoader extends AssetLoader {
     "current balance": "الرصيد الحالي",
     "tourist": "سائح",
     "admin": "مدير النظام",
-    "store": "متجر"
+    "store": "متجر",
+    "RateTheStore'sServices": "قيم خدمات المحل",
+    "home": "الرئيسية",
+    "map": "الخريطة",
+    "account": "الحساب"
   };
   static const Map<String, dynamic> fa = {
     "languagesellect": "زبان مورد نظر خود را انتخاب کنید",
@@ -158,7 +162,11 @@ class CodegenLoader extends AssetLoader {
     "current balance": "موجودی فعلی",
     "tourist": "توریست",
     "admin": "مدیر",
-    "store": "فروشگاه"
+    "store": "فروشگاه",
+    "RateTheStore'sServices": "به خدمات فروشگاه امتیاز دهید",
+    "home": "صفحه اصلی",
+    "map": "نقشه",
+    "account": "حساب"
   };
   static const Map<String, dynamic> ru = {
     "languagesellect": "Выберите язык, который вы хотите",
@@ -230,7 +238,11 @@ class CodegenLoader extends AssetLoader {
     "current balance": "текущий баланс",
     "tourist": "турист",
     "admin": "администратор",
-    "store": "магазин"
+    "store": "магазин",
+    "RateTheStore'sServices": "Оцените услуги магазина",
+    "home": "Дом",
+    "map": "карта",
+    "account": "Счет"
   };
   static const Map<String, dynamic> fr = {
     "languagesellect": "Choisissez la langue que vous voulez",
@@ -303,7 +315,11 @@ class CodegenLoader extends AssetLoader {
     "current balance": "Solde actuel",
     "tourist": "touristique",
     "admin": "administratrice",
-    "store": "magasin"
+    "store": "magasin",
+    "RateTheStore'sServices": "Évaluez les services du magasin",
+    "home": "Maison",
+    "map": "Carte",
+    "account": "Compte"
   };
   static const Map<String, dynamic> en = {
     "languagesellect": "Sellect your language",
@@ -376,7 +392,11 @@ class CodegenLoader extends AssetLoader {
     "current balance": "Current balance",
     "tourist": "tourist",
     "admin": "admin",
-    "store": "store"
+    "store": "store",
+    "RateTheStore'sServices": "Rate the store's services",
+    "home": "Home",
+    "map": "Map",
+    "account": "Account"
   };
 
   static const Map<String, Map<String, dynamic>> mapLocales = {

@@ -33,6 +33,7 @@ class _OfferWidgetState extends State<OfferWidget> {
         height: widget.mediaQuery.height / 5,
         decoration: BoxDecoration(
           color: Colors.white,
+          borderRadius: const BorderRadius.all(Radius.circular(15)),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withOpacity(0.5),
@@ -47,14 +48,20 @@ class _OfferWidgetState extends State<OfferWidget> {
             SingleChildScrollView(
               child: Column(
                 children: [
-                  Hero(
-                    tag:
-                        '${widget.offers['shop']['id']}-${widget.offers['shop']['name']}',
-                    child: Image.asset(
-                      widget.offers['shop']['image'],
-                      fit: BoxFit.cover,
-                      height: widget.mediaQuery.height / 8,
-                      width: double.infinity,
+                  ClipRRect(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15),
+                    ),
+                    child: Hero(
+                      tag:
+                          '${widget.offers['shop']['id']}-${widget.offers['shop']['name']}',
+                      child: Image.asset(
+                        widget.offers['shop']['image'],
+                        fit: BoxFit.cover,
+                        height: widget.mediaQuery.height / 8,
+                        width: double.infinity,
+                      ),
                     ),
                   ),
                   SizedBox(

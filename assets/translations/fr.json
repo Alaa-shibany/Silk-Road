@@ -69,5 +69,9 @@
     "current balance" : "Solde actuel",
     "tourist" : "touristique",
     "admin":"administratrice",
-    "store":"magasin"
+    "store":"magasin",
+    "RateTheStore'sServices" : "Évaluez les services du magasin",
+    "home":"Maison",
+    "map":"Carte",
+    "account":"Compte"
 }

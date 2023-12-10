@@ -147,16 +147,13 @@ class _HomeScreenState extends State<HomeScreen>
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: mediaQuery.height / 6.9),
-            child: ImageSliderWidget(mediaQuery: mediaQuery),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: mediaQuery.height / 2.8),
+            padding: EdgeInsets.only(top: mediaQuery.height / 6.8),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  ImageSliderWidget(mediaQuery: mediaQuery),
                   Container(
                     //this container has {sectors}
                     margin: EdgeInsets.only(
@@ -212,7 +209,9 @@ class _HomeScreenState extends State<HomeScreen>
                     child: HomeOffersWidget(
                         allOffers: allShops,
                         physics: const NeverScrollableScrollPhysics(),
-                        length: 6,
+                        length: HomeScreen.offers.length > 6
+                            ? 6
+                            : HomeScreen.offers.length,
                         mediaQuery: mediaQuery,
                         offers: HomeScreen.offers),
                   ),

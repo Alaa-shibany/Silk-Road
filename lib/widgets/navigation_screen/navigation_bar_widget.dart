@@ -31,12 +31,12 @@ class NavigationBarWidget extends StatelessWidget {
           tabs: [
             GButton(
               icon: Icons.home,
-              text: 'Home',
+              text: LocaleKeys.home.tr(),
               textSize: MediaQuery.of(context).size.width / 25,
             ),
             GButton(
               icon: Iconsax.map4,
-              text: 'Map',
+              text: LocaleKeys.map.tr(),
               textSize: MediaQuery.of(context).size.width / 25,
             ),
             GButton(
@@ -51,7 +51,7 @@ class NavigationBarWidget extends StatelessWidget {
             ),
             GButton(
               icon: Icons.manage_accounts_outlined,
-              text: 'Account',
+              text: LocaleKeys.account.tr(),
               textSize: MediaQuery.of(context).size.width / 25,
             ),
           ],

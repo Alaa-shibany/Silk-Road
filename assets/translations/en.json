@@ -69,5 +69,10 @@
     "current balance" : "Current balance",
     "tourist" : "tourist",
     "admin":"admin",
-    "store":"store"
+    "store":"store",
+    "RateTheStore'sServices" : "Rate the store's services",
+    "home":"Home",
+    "map":"Map",
+    "account":"Account"
+    
 }

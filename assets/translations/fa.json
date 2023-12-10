@@ -69,5 +69,9 @@
     "current balance" : "موجودی فعلی",
     "tourist" : "توریست",
     "admin":"مدیر",
-    "store":"فروشگاه"
+    "store":"فروشگاه",
+    "RateTheStore'sServices" : "به خدمات فروشگاه امتیاز دهید",
+    "home":"صفحه اصلی",
+    "map":"نقشه",
+    "account":"حساب"
 }

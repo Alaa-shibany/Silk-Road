@@ -69,5 +69,9 @@
     "current balance" : "текущий баланс",
     "tourist" : "турист",
     "admin":"администратор",
-    "store":"магазин"
+    "store":"магазин",
+    "RateTheStore'sServices" : "Оцените услуги магазина",
+    "home":"Дом",
+    "map":"карта",
+    "account":"Счет"
 }

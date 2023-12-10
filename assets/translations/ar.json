@@ -69,5 +69,9 @@
     "current balance" : "الرصيد الحالي",
     "tourist" : "سائح",
     "admin":"مدير النظام",
-    "store":"متجر"
+    "store":"متجر",
+    "RateTheStore'sServices" : "قيم خدمات المحل",
+    "home":"الرئيسية",
+    "map":"الخريطة",
+    "account":"الحساب"
 }
