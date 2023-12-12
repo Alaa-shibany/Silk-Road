@@ -7,11 +7,13 @@ class OfferShopWidget extends StatelessWidget {
       required this.mediaQuery,
       required this.isLiked,
       required this.offerTitle,
-      required this.likes});
+      required this.likes,
+      required this.offerImage});
   final Size mediaQuery;
   final bool isLiked;
   final String offerTitle;
   final int likes;
+  final String offerImage;
 
   @override
   Widget build(BuildContext context) {
@@ -44,8 +46,8 @@ class OfferShopWidget extends StatelessWidget {
             height: mediaQuery.height / 5,
             width: double.infinity,
             child: Image.asset(
-              'assets/images/special.png',
-              fit: BoxFit.contain,
+              offerImage,
+              fit: BoxFit.cover,
             ),
           ),
           Positioned(

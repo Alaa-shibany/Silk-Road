@@ -153,6 +153,8 @@ class _ShopDetailsScreenState extends State<ShopDetailsScreen> {
                                 return OfferShopWidget(
                                     mediaQuery: mediaQuery,
                                     isLiked: isLiked,
+                                    offerImage: shopDetails['offers'][index]
+                                        ['image'],
                                     offerTitle: shopDetails['offers'][index]
                                         ['offer'],
                                     likes: shopDetails['offers'][index]

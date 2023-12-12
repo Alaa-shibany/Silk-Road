@@ -98,71 +98,67 @@ class _AllOffersScreenState extends State<AllOffersScreen> {
             ),
             Container(
               margin: EdgeInsets.only(top: mediaQuery.height / 4.7),
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    SizedBox(
-                      width: mediaQuery.width / 90,
-                    ),
-                    FilterWidget(
-                      mediaQuery: mediaQuery,
-                      menu: filterOrder,
-                      onChanged: (String? newValue) {
-                        setState(() {
-                          selectedTopicsFilter = newValue;
-                          print(searchOffers);
-                          if (newValue == LocaleKeys.fromhightolow.tr()) {
-                            setState(() {
-                              searchOffers.sort((a, b) => b['shop']['offer']
-                                      ['likes']
-                                  .compareTo(a['shop']['offer']['likes']));
-                            });
-                          } else if (newValue ==
-                              LocaleKeys.fromlowtohigh.tr()) {
-                            setState(() {
-                              searchOffers.sort((a, b) => a['shop']['offer']
-                                      ['likes']
-                                  .compareTo(b['shop']['offer']['likes']));
-                            });
-                          }
-                        });
-                      },
-                      value: selectedTopicsFilter,
-                      filterTitle: LocaleKeys.orderby.tr(),
-                    ),
-                    SizedBox(
-                      width: mediaQuery.width / 90,
-                    ),
-                    FilterWidget(
-                      mediaQuery: mediaQuery,
-                      menu: filterTopics,
-                      onChanged: (String? newValue) {
-                        setState(() {
-                          selectedTopics2Filter = newValue;
-                          List filter = [];
-                          if (newValue == LocaleKeys.all.tr()) {
-                            setState(() {
-                              filter = allOffers;
-                            });
-                          } else {
-                            setState(() {
-                              filter = allOffers
-                                  .where(
-                                      (element) => element['name'] == newValue)
-                                  .toList();
-                            });
-                          }
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: mediaQuery.width / 90,
+                  ),
+                  FilterWidget(
+                    mediaQuery: mediaQuery,
+                    menu: filterOrder,
+                    onChanged: (String? newValue) {
+                      setState(() {
+                        selectedTopicsFilter = newValue;
+                        print(searchOffers);
+                        if (newValue == LocaleKeys.fromhightolow.tr()) {
                           setState(() {
-                            searchOffers = filter;
+                            searchOffers.sort((a, b) => b['shop']['offer']
+                                    ['likes']
+                                .compareTo(a['shop']['offer']['likes']));
                           });
+                        } else if (newValue == LocaleKeys.fromlowtohigh.tr()) {
+                          setState(() {
+                            searchOffers.sort((a, b) => a['shop']['offer']
+                                    ['likes']
+                                .compareTo(b['shop']['offer']['likes']));
+                          });
+                        }
+                      });
+                    },
+                    value: selectedTopicsFilter,
+                    filterTitle: LocaleKeys.orderby.tr(),
+                  ),
+                  SizedBox(
+                    width: mediaQuery.width / 90,
+                  ),
+                  FilterWidget(
+                    mediaQuery: mediaQuery,
+                    menu: filterTopics,
+                    onChanged: (String? newValue) {
+                      setState(() {
+                        selectedTopics2Filter = newValue;
+                        List filter = [];
+                        if (newValue == LocaleKeys.all.tr()) {
+                          setState(() {
+                            filter = allOffers;
+                          });
+                        } else {
+                          setState(() {
+                            filter = allOffers
+                                .where((element) => element['name'] == newValue)
+                                .toList();
+                          });
+                        }
+                        setState(() {
+                          searchOffers = filter;
                         });
-                      },
-                      value: selectedTopics2Filter,
-                      filterTitle: LocaleKeys.sectors.tr(),
-                    ),
-                  ],
-                ),
+                      });
+                    },
+                    value: selectedTopics2Filter,
+                    filterTitle: LocaleKeys.sectors.tr(),
+                  ),
+                ],
               ),
             ),
             Container(

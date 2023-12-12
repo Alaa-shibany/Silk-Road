@@ -62,7 +62,7 @@ class MapSampleState extends State<MapSample>
           icon: BitmapDescriptor.fromBytes(await getBytesFromAsset(
               'assets/images/resturant.png',
               // ignore: use_build_context_synchronously
-              MediaQuery.of(context).size.height ~/ 10)),
+              MediaQuery.of(context).size.height ~/ 8)),
           onTap: () {
             customInfoWindowController.addInfoWindow!(
               Stack(
@@ -79,7 +79,7 @@ class MapSampleState extends State<MapSample>
                         FadeInImage(
                           placeholder: MemoryImage(kTransparentImage),
                           image: const AssetImage(
-                              'assets/images/resturants/resturant1.png'),
+                              'assets/images/resturants/resturant2.png'),
                           fit: BoxFit.cover,
                           height: MediaQuery.of(context).size.height / 5.5,
                           width: double.infinity,
@@ -140,9 +140,9 @@ class MapSampleState extends State<MapSample>
           position: LatLng(position.latitude,
               position.longitude + 0.001), // Set the marker's position
           icon: BitmapDescriptor.fromBytes(await getBytesFromAsset(
-              'assets/images/vehicle.png',
+              'assets/images/resturant.png',
               // ignore: use_build_context_synchronously
-              MediaQuery.of(context).size.height ~/ 10)),
+              MediaQuery.of(context).size.height ~/ 8)),
           onTap: () {
             customInfoWindowController.addInfoWindow!(
               Stack(
@@ -158,8 +158,8 @@ class MapSampleState extends State<MapSample>
                       children: [
                         FadeInImage(
                           placeholder: MemoryImage(kTransparentImage),
-                          image:
-                              const AssetImage('assets/images/cars/car1.png'),
+                          image: const AssetImage(
+                              'assets/images/resturants/resturant3.png'),
                           fit: BoxFit.cover,
                           height: MediaQuery.of(context).size.height / 5.5,
                           width: double.infinity,
@@ -183,7 +183,7 @@ class MapSampleState extends State<MapSample>
                                 ),
                               ),
                               title: const Text(
-                                'Restaurant A',
+                                'Restaurant B',
                                 maxLines: 2,
                                 textAlign: TextAlign.start,
                                 softWrap: true,
@@ -195,7 +195,7 @@ class MapSampleState extends State<MapSample>
                                 ),
                               ),
                               subtitle: const Text(
-                                'Make tako and showerma',
+                                'Nice restaurant',
                                 maxLines: 2,
                                 textAlign: TextAlign.start,
                                 softWrap: true,
@@ -215,86 +215,86 @@ class MapSampleState extends State<MapSample>
               LatLng(position.latitude, position.longitude + 0.001),
             );
           }),
-      Marker(
-          markerId: const MarkerId('4'),
-          position: LatLng(position.latitude,
-              position.longitude - 0.001), // Set the marker's position
-          icon: BitmapDescriptor.fromBytes(await getBytesFromAsset(
-              'assets/images/bank.png',
-              // ignore: use_build_context_synchronously
-              MediaQuery.of(context).size.height ~/ 10)),
-          onTap: () {
-            customInfoWindowController.addInfoWindow!(
-              Stack(
-                children: [
-                  Card(
-                    margin: const EdgeInsets.all(8),
-                    clipBehavior: Clip.hardEdge,
-                    elevation: 10,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Stack(
-                      children: [
-                        FadeInImage(
-                          placeholder: MemoryImage(kTransparentImage),
-                          image:
-                              const AssetImage('assets/images/bank/bank1.png'),
-                          fit: BoxFit.cover,
-                          height: MediaQuery.of(context).size.height / 5.5,
-                          width: double.infinity,
-                        ),
-                        Positioned(
-                          bottom: 0,
-                          right: 0,
-                          left: 0,
-                          child: Container(
-                            color: Colors.black54,
-                            child: ListTile(
-                              trailing: TextButton.icon(
-                                onPressed: null,
-                                icon: const Icon(
-                                  Icons.timer,
-                                  color: Colors.white,
-                                ),
-                                label: Text(
-                                  LocaleKeys.open.tr(),
-                                  style: const TextStyle(color: Colors.white),
-                                ),
-                              ),
-                              title: const Text(
-                                'Restaurant A',
-                                maxLines: 2,
-                                textAlign: TextAlign.start,
-                                softWrap: true,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              subtitle: const Text(
-                                'Make tako and showerma',
-                                maxLines: 2,
-                                textAlign: TextAlign.start,
-                                softWrap: true,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              LatLng(position.latitude, position.longitude - 0.001),
-            );
-          }),
+      // Marker(
+      //     markerId: const MarkerId('4'),
+      //     position: LatLng(position.latitude,
+      //         position.longitude - 0.001), // Set the marker's position
+      //     icon: BitmapDescriptor.fromBytes(await getBytesFromAsset(
+      //         'assets/images/bank.png',
+      //         // ignore: use_build_context_synchronously
+      //         MediaQuery.of(context).size.height ~/ 10)),
+      //     onTap: () {
+      //       customInfoWindowController.addInfoWindow!(
+      //         Stack(
+      //           children: [
+      //             Card(
+      //               margin: const EdgeInsets.all(8),
+      //               clipBehavior: Clip.hardEdge,
+      //               elevation: 10,
+      //               shape: RoundedRectangleBorder(
+      //                 borderRadius: BorderRadius.circular(15),
+      //               ),
+      //               child: Stack(
+      //                 children: [
+      //                   FadeInImage(
+      //                     placeholder: MemoryImage(kTransparentImage),
+      //                     image:
+      //                         const AssetImage('assets/images/bank/bank1.png'),
+      //                     fit: BoxFit.cover,
+      //                     height: MediaQuery.of(context).size.height / 5.5,
+      //                     width: double.infinity,
+      //                   ),
+      //                   Positioned(
+      //                     bottom: 0,
+      //                     right: 0,
+      //                     left: 0,
+      //                     child: Container(
+      //                       color: Colors.black54,
+      //                       child: ListTile(
+      //                         trailing: TextButton.icon(
+      //                           onPressed: null,
+      //                           icon: const Icon(
+      //                             Icons.timer,
+      //                             color: Colors.white,
+      //                           ),
+      //                           label: Text(
+      //                             LocaleKeys.open.tr(),
+      //                             style: const TextStyle(color: Colors.white),
+      //                           ),
+      //                         ),
+      //                         title: const Text(
+      //                           'Restaurant A',
+      //                           maxLines: 2,
+      //                           textAlign: TextAlign.start,
+      //                           softWrap: true,
+      //                           overflow: TextOverflow.ellipsis,
+      //                           style: TextStyle(
+      //                             fontSize: 20,
+      //                             fontWeight: FontWeight.bold,
+      //                             color: Colors.white,
+      //                           ),
+      //                         ),
+      //                         subtitle: const Text(
+      //                           'Make tako and showerma',
+      //                           maxLines: 2,
+      //                           textAlign: TextAlign.start,
+      //                           softWrap: true,
+      //                           overflow: TextOverflow.ellipsis,
+      //                           style: TextStyle(
+      //                             color: Colors.white,
+      //                           ),
+      //                         ),
+      //                       ),
+      //                     ),
+      //                   ),
+      //                 ],
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //         LatLng(position.latitude, position.longitude - 0.001),
+      //       );
+      //     }),
     };
     setState(() {
       isLoading = false;
