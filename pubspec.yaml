@@ -77,6 +77,10 @@ flutter:
     - assets/images/startScreenBG.png
     - assets/images/special.png
     - assets/images/mosq.png
+    - assets/images/bus.png
+    - assets/images/house.png
+    - assets/images/lawyerShop.png
+    - assets/images/save.png
     - assets/images/syria.png
     - assets/images/visa.png
     - assets/images/offer1.png

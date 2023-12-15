@@ -66,22 +66,30 @@ class data {
       'name': LocaleKeys.bank.tr(),
       'image': 'assets/images/bank.png',
       'shops': [
-        // {
-        //   "id": 6,
-        //   "name": "Cityville Bank",
-        //   "image": 'assets/images/bank/bank1.png',
-        //   "location": "123 Main St, Cityville",
-        //   "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-        //   "subtitle": "Make tako and showerma",
-        //   "description":
-        //       "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
-        //   "rate": 4.0,
-        //   "status": LocaleKeys.open.tr(),
-        //   "offers": [
-        //     {"likes": 300, "offer": "Free Financial Consultation"},
-        //     {"likes": 450, "offer": "0% Interest on First Loan"}
-        //   ]
-        // },
+        {
+          "id": 2,
+          "name": "Cityville Bank",
+          "image": 'assets/images/bank/bank1.png',
+          "location": "123 Main St, Cityville",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "subtitle": "Make tako and showerma",
+          "description":
+              "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+          "rate": 4.0,
+          "status": LocaleKeys.open.tr(),
+          "offers": [
+            {
+              "likes": 300,
+              "offer": "Free Financial Consultation",
+              'image': 'assets/images/bank/bank1.png'
+            },
+            {
+              "likes": 450,
+              "offer": "0% Interest on First Loan",
+              'image': 'assets/images/bank/bank1.png'
+            }
+          ]
+        },
       ]
     },
     {
@@ -89,70 +97,191 @@ class data {
       'name': LocaleKeys.vehicles.tr(),
       'image': 'assets/images/vehicle.png',
       'shops': [
-        // {
-        //   "id": 9,
-        //   "name": "Car Rental Company A",
-        //   "image": 'assets/images/cars/car1.png',
-        //   "location": "123 Main St, Cityville",
-        //   "subtitle": "Make tako and showerma",
-        //   "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-        //   "rate": 5.0,
-        //   "description":
-        //       "Explore the city with our wide range of rental cars. From compact cars to SUVs, we offer the perfect vehicle for your needs. Our cars are well-maintained and ready for your next adventure.",
-        //   "status": LocaleKeys.open.tr(),
-        //   "offers": [
-        //     {
-        //       "likes": 505,
-        //       "offer": "10% Off Weekly Rentals",
-        //     },
-        //     {
-        //       "likes": 250,
-        //       "offer": "Free Upgrade on Premium Cars",
-        //     },
-        //   ]
-        // },
+        {
+          "id": 3,
+          "name": "Car Rental Company A",
+          "image": 'assets/images/cars/car1.png',
+          "location": "123 Main St, Cityville",
+          "subtitle": "Make tako and showerma",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "rate": 5.0,
+          "description":
+              "Explore the city with our wide range of rental cars. From compact cars to SUVs, we offer the perfect vehicle for your needs. Our cars are well-maintained and ready for your next adventure.",
+          "status": LocaleKeys.open.tr(),
+          "offers": [
+            {
+              "likes": 505,
+              "offer": "10% Off Weekly Rentals",
+              'image': 'assets/images/cars/car1.png'
+            },
+            {
+              "likes": 250,
+              "offer": "Free Upgrade on Premium Cars",
+              'image': 'assets/images/cars/car1.png'
+            },
+          ]
+        },
       ],
     },
     {
       'id': 3,
       'name': LocaleKeys.health.tr(),
       'image': 'assets/images/beauty.png',
-      'shops': []
+      'shops': [
+        {
+          "id": 4,
+          "name": "Center Of Beauty",
+          "image": 'assets/images/beauty/beauty1.png',
+          "location": "123 Main St, Cityville",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "subtitle": "We will make you perfect",
+          "description":
+              "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+          "rate": 1.0,
+          "status": LocaleKeys.open.tr(),
+          "offers": [
+            {
+              "likes": 590,
+              "offer": "Free makeup for boys",
+              "image": 'assets/images/beauty/beauty1.png',
+            },
+            {
+              "likes": 2000,
+              "offer": "5% Discount on eyes",
+              "image": 'assets/images/beauty/beauty1.png'
+            }
+          ]
+        },
+      ]
     },
     {
       'id': 4,
       'name': LocaleKeys.transportation.tr(),
       'image': 'assets/images/transportation.png',
-      'shops': [],
+      'shops': [
+        {
+          "id": 5,
+          "name": "Center Of Transportation",
+          "image": 'assets/images/bus.png',
+          "location": "123 Main St, Cityville",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "subtitle": "We will make you perfect",
+          "description":
+              "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+          "rate": 1.0,
+          "status": LocaleKeys.open.tr(),
+          "offers": [
+            {
+              "likes": 50,
+              "offer": "Free makeup for boys",
+              "image": 'assets/images/bus.png',
+            },
+            {
+              "likes": 300,
+              "offer": "5% Discount on eyes",
+              "image": 'assets/images/bus.png'
+            }
+          ]
+        },
+      ],
     },
     {
       'id': 5,
       'name': LocaleKeys.security.tr(),
       'image': 'assets/images/security.png',
-      'shops': [],
+      'shops': [
+        {
+          "id": 6,
+          "name": "Center Of Transportation",
+          "image": 'assets/images/save.png',
+          "location": "123 Main St, Cityville",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "subtitle": "We will make you perfect",
+          "description":
+              "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+          "rate": 1.0,
+          "status": LocaleKeys.open.tr(),
+          "offers": [
+            {
+              "likes": 50,
+              "offer": "Free makeup for boys",
+              "image": 'assets/images/save.png',
+            },
+            {
+              "likes": 300,
+              "offer": "5% Discount on eyes",
+              "image": 'assets/images/save.png'
+            }
+          ]
+        },
+      ],
     },
     {
       'id': 6,
       'name': LocaleKeys.rental.tr(),
       'image': 'assets/images/rental.png',
-      'shops': [],
+      'shops': [
+        {
+          "id": 7,
+          "name": " Security&Save",
+          "image": 'assets/images/house.png',
+          "location": "123 Main St, Cityville",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "subtitle": "We will make you perfect",
+          "description":
+              "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+          "rate": 1.0,
+          "status": LocaleKeys.open.tr(),
+          "offers": [
+            {
+              "likes": 50,
+              "offer": "Free makeup for boys",
+              "image": 'assets/images/house.png',
+            },
+            {
+              "likes": 300,
+              "offer": "5% Discount on eyes",
+              "image": 'assets/images/house.png'
+            }
+          ]
+        },
+      ],
     },
     {
       'id': 7,
       'name': LocaleKeys.lawyers.tr(),
       'image': 'assets/images/lawyer.png',
-      'shops': [],
+      'shops': [
+        {
+          "id": 8,
+          "name": "Creative lawyers",
+          "image": 'assets/images/lawyerShop.png',
+          "location": "123 Main St, Cityville",
+          "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+          "subtitle": "We will make you perfect",
+          "description":
+              "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+          "rate": 1.0,
+          "status": LocaleKeys.open.tr(),
+          "offers": [
+            {
+              "likes": 50,
+              "offer": "Free makeup for boys",
+              "image": 'assets/images/lawyerShop.png',
+            },
+            {
+              "likes": 300,
+              "offer": "5% Discount on eyes",
+              "image": 'assets/images/lawyerShop.png'
+            }
+          ]
+        },
+      ],
     },
     {
       'id': 8,
       'name': LocaleKeys.entertainment.tr(),
       'image': 'assets/images/entertainment.png',
-      'shops': [],
-    },
-    {
-      'id': 8,
-      'name': LocaleKeys.bank.tr(),
-      'image': 'assets/images/bank.png',
       'shops': [],
     },
     {
@@ -354,7 +483,7 @@ class data {
             "image": 'assets/images/resturants/resturant3.png',
             "location": "123 Main St, Cityville",
             "description":
-                " we pride ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
+                " we pr ide ourselves on providing an exceptional dining experience that tantalizes your taste buds and leaves you coming back for more. Nestled in the heart of [Your City/Town], our restaurant offers a perfect blend of exquisite cuisine, cozy ambiance, and top-notch service.",
             "subtitle": "Make tako and showerma",
             "status": LocaleKeys.closed.tr(),
             "offers": [
@@ -401,22 +530,30 @@ class data {
         'name': LocaleKeys.bank.tr(),
         'image': 'assets/images/bank.png',
         'shops': [
-          // {
-          //   "id": 6,
-          //   "name": "Cityville Bank",
-          //   "image": 'assets/images/bank/bank1.png',
-          //   "location": "123 Main St, Cityville",
-          //   "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          //   "subtitle": "Make tako and showerma",
-          //   "description":
-          //       "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
-          //   "rate": 4.0,
-          //   "status": LocaleKeys.open.tr(),
-          //   "offers": [
-          //     {"likes": 300, "offer": "Free Financial Consultation"},
-          //     {"likes": 450, "offer": "0% Interest on First Loan"}
-          //   ]
-          // },
+          {
+            "id": 2,
+            "name": "Cityville Bank",
+            "image": 'assets/images/bank/bank1.png',
+            "location": "123 Main St, Cityville",
+            "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+            "subtitle": "Make tako and showerma",
+            "description":
+                "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+            "rate": 4.0,
+            "status": LocaleKeys.open.tr(),
+            "offers": [
+              {
+                "likes": 300,
+                "offer": "Free Financial Consultation",
+                'image': 'assets/images/bank/bank1.png'
+              },
+              {
+                "likes": 450,
+                "offer": "0% Interest on First Loan",
+                'image': 'assets/images/bank/bank1.png'
+              }
+            ]
+          },
         ]
       },
       {
@@ -424,70 +561,191 @@ class data {
         'name': LocaleKeys.vehicles.tr(),
         'image': 'assets/images/vehicle.png',
         'shops': [
-          // {
-          //   "id": 9,
-          //   "name": "Car Rental Company A",
-          //   "image": 'assets/images/cars/car1.png',
-          //   "location": "123 Main St, Cityville",
-          //   "subtitle": "Make tako and showerma",
-          //   "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
-          //   "rate": 5.0,
-          //   "description":
-          //       "Explore the city with our wide range of rental cars. From compact cars to SUVs, we offer the perfect vehicle for your needs. Our cars are well-maintained and ready for your next adventure.",
-          //   "status": LocaleKeys.open.tr(),
-          //   "offers": [
-          //     {
-          //       "likes": 505,
-          //       "offer": "10% Off Weekly Rentals",
-          //     },
-          //     {
-          //       "likes": 250,
-          //       "offer": "Free Upgrade on Premium Cars",
-          //     },
-          //   ]
-          // },
+          {
+            "id": 3,
+            "name": "Car Rental Company A",
+            "image": 'assets/images/cars/car1.png',
+            "location": "123 Main St, Cityville",
+            "subtitle": "Make tako and showerma",
+            "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+            "rate": 5.0,
+            "description":
+                "Explore the city with our wide range of rental cars. From compact cars to SUVs, we offer the perfect vehicle for your needs. Our cars are well-maintained and ready for your next adventure.",
+            "status": LocaleKeys.open.tr(),
+            "offers": [
+              {
+                "likes": 505,
+                "offer": "10% Off Weekly Rentals",
+                'image': 'assets/images/cars/car1.png'
+              },
+              {
+                "likes": 250,
+                "offer": "Free Upgrade on Premium Cars",
+                'image': 'assets/images/cars/car1.png'
+              },
+            ]
+          },
         ],
       },
       {
         'id': 3,
         'name': LocaleKeys.health.tr(),
         'image': 'assets/images/beauty.png',
-        'shops': []
+        'shops': [
+          {
+            "id": 4,
+            "name": "Center Of Beauty",
+            "image": 'assets/images/beauty/beauty1.png',
+            "location": "123 Main St, Cityville",
+            "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+            "subtitle": "We will make you perfect",
+            "description":
+                "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+            "rate": 1.0,
+            "status": LocaleKeys.open.tr(),
+            "offers": [
+              {
+                "likes": 590,
+                "offer": "Free makeup for boys",
+                "image": 'assets/images/beauty/beauty1.png',
+              },
+              {
+                "likes": 2000,
+                "offer": "5% Discount on eyes",
+                "image": 'assets/images/beauty/beauty1.png'
+              }
+            ]
+          },
+        ]
       },
       {
         'id': 4,
         'name': LocaleKeys.transportation.tr(),
         'image': 'assets/images/transportation.png',
-        'shops': [],
+        'shops': [
+          {
+            "id": 5,
+            "name": "Center Of Transportation",
+            "image": 'assets/images/bus.png',
+            "location": "123 Main St, Cityville",
+            "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+            "subtitle": "We will make you perfect",
+            "description":
+                "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+            "rate": 1.0,
+            "status": LocaleKeys.open.tr(),
+            "offers": [
+              {
+                "likes": 50,
+                "offer": "Free makeup for boys",
+                "image": 'assets/images/bus.png',
+              },
+              {
+                "likes": 300,
+                "offer": "5% Discount on eyes",
+                "image": 'assets/images/bus.png'
+              }
+            ]
+          },
+        ],
       },
       {
         'id': 5,
         'name': LocaleKeys.security.tr(),
         'image': 'assets/images/security.png',
-        'shops': [],
+        'shops': [
+          {
+            "id": 6,
+            "name": "Center Of Transportation",
+            "image": 'assets/images/save.png',
+            "location": "123 Main St, Cityville",
+            "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+            "subtitle": "We will make you perfect",
+            "description":
+                "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+            "rate": 1.0,
+            "status": LocaleKeys.open.tr(),
+            "offers": [
+              {
+                "likes": 50,
+                "offer": "Free makeup for boys",
+                "image": 'assets/images/save.png',
+              },
+              {
+                "likes": 300,
+                "offer": "5% Discount on eyes",
+                "image": 'assets/images/save.png'
+              }
+            ]
+          },
+        ],
       },
       {
         'id': 6,
         'name': LocaleKeys.rental.tr(),
         'image': 'assets/images/rental.png',
-        'shops': [],
+        'shops': [
+          {
+            "id": 7,
+            "name": " Security&Save",
+            "image": 'assets/images/house.png',
+            "location": "123 Main St, Cityville",
+            "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+            "subtitle": "We will make you perfect",
+            "description":
+                "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+            "rate": 1.0,
+            "status": LocaleKeys.open.tr(),
+            "offers": [
+              {
+                "likes": 50,
+                "offer": "Free makeup for boys",
+                "image": 'assets/images/house.png',
+              },
+              {
+                "likes": 300,
+                "offer": "5% Discount on eyes",
+                "image": 'assets/images/house.png'
+              }
+            ]
+          },
+        ],
       },
       {
         'id': 7,
         'name': LocaleKeys.lawyers.tr(),
         'image': 'assets/images/lawyer.png',
-        'shops': [],
+        'shops': [
+          {
+            "id": 8,
+            "name": "Creative lawyers",
+            "image": 'assets/images/lawyerShop.png',
+            "location": "123 Main St, Cityville",
+            "open": "9:00 ${LocaleKeys.am.tr()} - 9:00 ${LocaleKeys.bm.tr()}",
+            "subtitle": "We will make you perfect",
+            "description":
+                "Cityville Bank is committed to providing top-notch banking services to our customers. With a wide range of financial products, including savings accounts, loans, and investment opportunities, we aim to help you achieve your financial goals.",
+            "rate": 1.0,
+            "status": LocaleKeys.open.tr(),
+            "offers": [
+              {
+                "likes": 50,
+                "offer": "Free makeup for boys",
+                "image": 'assets/images/lawyerShop.png',
+              },
+              {
+                "likes": 300,
+                "offer": "5% Discount on eyes",
+                "image": 'assets/images/lawyerShop.png'
+              }
+            ]
+          },
+        ],
       },
       {
         'id': 8,
         'name': LocaleKeys.entertainment.tr(),
         'image': 'assets/images/entertainment.png',
-        'shops': [],
-      },
-      {
-        'id': 8,
-        'name': LocaleKeys.bank.tr(),
-        'image': 'assets/images/bank.png',
         'shops': [],
       },
       {

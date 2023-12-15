@@ -53,15 +53,11 @@ class _OfferWidgetState extends State<OfferWidget> {
                       topLeft: Radius.circular(15),
                       topRight: Radius.circular(15),
                     ),
-                    child: Hero(
-                      tag:
-                          '${widget.offers['shop']['id']}-${widget.offers['shop']['name']}',
-                      child: Image.asset(
-                        widget.offers['shop']['image'],
-                        fit: BoxFit.cover,
-                        height: widget.mediaQuery.height / 8,
-                        width: double.infinity,
-                      ),
+                    child: Image.asset(
+                      widget.offers['shop']['offer']['image'],
+                      fit: BoxFit.cover,
+                      height: widget.mediaQuery.height / 8,
+                      width: double.infinity,
                     ),
                   ),
                   SizedBox(
